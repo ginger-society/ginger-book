@@ -1,7 +1,4 @@
 <p align="center">
-  <a href="https://ladle.dev" target="_blank" rel="noopener noreferrer">
-    <img width="180" src="https://raw.githubusercontent.com/ginger-society/ginger-book/main/packages/website/static/img/logo-gray.svg" alt="Ladle logo">
-  </a>
 </p>
 <br/>
 

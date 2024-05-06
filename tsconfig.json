@@ -40,5 +40,5 @@
     "e2e/*/tests/*",
     "type-tests/*"
   ],
-  "exclude": ["packages/website/**", "packages/example/src/button.stories.js"]
+  "exclude": ["packages/example/src/button.stories.js"]
 }
