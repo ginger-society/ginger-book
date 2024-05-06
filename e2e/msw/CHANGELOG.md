@@ -1,0 +1,78 @@
+# test-baseweb
+
+## 0.0.87
+
+### Patch Changes
+
+- Updated dependencies [[`faf818d`](https://github.com/ginger-society/ginger-book/commit/faf818d29397f85d4c1610eee501fca3462f1cbd)]:
+  - @ginger-book/react@4.0.3
+
+## 0.0.86
+
+### Patch Changes
+
+- Updated dependencies [[`2212d01`](https://github.com/ginger-society/ginger-book/commit/2212d017bde2b816b82a9aa4d2d8d5f10a5b5a36)]:
+  - @ginger-book/react@4.0.2
+
+## 0.0.85
+
+### Patch Changes
+
+- Updated dependencies [[`213cbc8`](https://github.com/ginger-society/ginger-book/commit/213cbc8d24547850ce543d2a7b7962e841bcccda)]:
+  - @ginger-book/react@4.0.1
+
+## 0.0.84
+
+### Patch Changes
+
+- Updated dependencies [[`5b9f4ef`](https://github.com/ginger-society/ginger-book/commit/5b9f4ef2aff66d77ebdf638d1bff1cbf7b5d54a6)]:
+  - @ginger-book/react@4.0.0
+
+## 0.0.83
+
+### Patch Changes
+
+- Updated dependencies [[`c9be1d7`](https://github.com/ginger-society/ginger-book/commit/c9be1d79c7ccc5324014b9c39bf3c98325e3f9e0)]:
+  - @ginger-book/react@3.3.1
+
+## 0.0.82
+
+### Patch Changes
+
+- Updated dependencies [[`3ce9390`](https://github.com/ginger-society/ginger-book/commit/3ce939026542a0690c3c827ae2fafec105e70eb0)]:
+  - @ginger-book/react@3.3.0
+
+## 0.0.81
+
+### Patch Changes
+
+- Updated dependencies [[`6138c7f`](https://github.com/ginger-society/ginger-book/commit/6138c7fb9bdaae8a924879f21d76cf3ee9ad8f01)]:
+  - @ginger-book/react@3.2.2
+
+## 0.0.80
+
+### Patch Changes
+
+- Updated dependencies [[`4676d63`](https://github.com/ginger-society/ginger-book/commit/4676d63e699eb5280f19c1ee067a5ff29032c89e)]:
+  - @ginger-book/react@3.2.1
+
+## 0.0.79
+
+### Patch Changes
+
+- Updated dependencies [[`9727dc8`](https://github.com/ginger-society/ginger-book/commit/9727dc88c11c7b3f05129e665a5e9d9bc286c525)]:
+  - @ginger-book/react@3.2.0
+
+## 0.0.78
+
+### Patch Changes
+
+- Updated dependencies [[`36d3b8d`](https://github.com/ginger-society/ginger-book/commit/36d3b8d33da163327d5fcd5932db438e24d03003), [`67bb6ec`](https://github.com/ginger-society/ginger-book/commit/67bb6eca4941d5a0d89dba09af45d8f39001beb9), [`740378d`](https://github.com/ginger-society/ginger-book/commit/740378de5cad96f080eb2803794a7f65472634ce)]:
+  - @ginger-book/react@3.1.0
+
+## 0.0.77
+
+### Patch Changes
+
+- Updated dependencies [[`7cc65f8`](https://github.com/ginger-society/ginger-book/commit/7cc65f86ef289aba846089569c1bdc1d3355788f), [`da95b96`](https://github.com/ginger-society/ginger-book/commit/da95b962b74066153b8e1950584d159bdbb33b2c), [`8050652`](https://github.com/ginger-society/ginger-book/commit/8050652d2b8a1d95d73fa99653556c6593947ee9), [`1b048c4`](https://github.com/ginger-society/ginger-book/commit/1b048c4c46cc5a1872db286eac5066189bb3fd35), [`cf1a4a9`](https://github.com/ginger-society/ginger-book/commit/cf1a4a931e3d71c1c37cb88c450eaed20e237045), [`657329a`](https://github.com/ginger-society/ginger-book/commit/657329a6118b856b35e545422c6ec294c133567d), [`0c3c5ff`](https://github.com/ginger-society/ginger-book/commit/0c3c5ffdc7bbfeea0601c856f976697d4fc2aa35), [`b1983a4`](https://github.com/ginger-society/ginger-book/commit/b1983a415afef80acd4d546173d1caee0f454465), [`7650d11`](https://github.com/ginger-society/ginger-book/commit/7650d11952fe73a2d39ac2f86f89495695bee102), [`35eaece`](https://github.com/ginger-society/ginger-book/commit/35eaece59769a4aa2b8eb3186319ac10b8e17df0), [`e22508e`](https://github.com/ginger-society/ginger-book/commit/e22508ea74379c440038f2d6f1a45d5a70cc11d6), [`fcf448f`](https://github.com/ginger-society/ginger-book/commit/fcf448f7e7688bdc13393316f726e054d2a2b203)]:
+  - @ginger-book/react@3.0.0

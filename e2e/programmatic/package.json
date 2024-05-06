@@ -1,0 +1,25 @@
+{
+  "name": "test-programmatic",
+  "version": "0.2.96",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "node serve.js",
+    "serve-prod": "node preview.js",
+    "meta": "node get-meta.js",
+    "build": "node build.js",
+    "lint": "echo 'no lint'",
+    "test-dev": "cross-env TYPE=dev pnpm exec playwright test",
+    "test-prod": "cross-env TYPE=prod pnpm exec playwright test",
+    "test": "pnpm test-dev && pnpm test-prod"
+  },
+  "dependencies": {
+    "@ginger-book/playwright-config": "workspace:*",
+    "@ginger-book/react": "workspace:*",
+    "@playwright/test": "^1.42.1",
+    "cross-env": "^7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

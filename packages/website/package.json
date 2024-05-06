@@ -1,0 +1,42 @@
+{
+  "name": "website",
+  "version": "0.3.7",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear",
+    "lint": "echo 'no lint'",
+    "test": "echo 'no test'"
+  },
+  "dependencies": {
+    "@algolia/client-search": "^4.22.1",
+    "@docusaurus/core": "^3.1.1",
+    "@docusaurus/plugin-ideal-image": "^3.1.1",
+    "@docusaurus/preset-classic": "^3.1.1",
+    "@docusaurus/theme-common": "^3.1.1",
+    "@mdx-js/react": "^3.0.1",
+    "@types/react": "^18.2.66",
+    "clsx": "^2.1.0",
+    "prism-react-renderer": "^2.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
