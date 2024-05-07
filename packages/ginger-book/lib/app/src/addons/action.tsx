@@ -13,15 +13,15 @@ export const Button = ({ dispatch, globalState }: AddonProps) => {
         aria-label={text}
         title={text}
         onClick={() => setOpen(true)}
-        className={open ? "ladle-active" : ""}
+        className={open ? "ginger-book-active" : ""}
         data-testid="addon-action"
         type="button"
       >
         <Action />
-        <span className="ladle-addon-tooltip">{text}</span>
+        <span className="ginger-book-addon-tooltip">{text}</span>
         <label>Actions</label>
         {globalState.action.length ? (
-          <div className="ladle-badge">{globalState.action.length}</div>
+          <div className="ginger-book-badge">{globalState.action.length}</div>
         ) : null}
         <Modal
           maxWidth="60em"
@@ -39,7 +39,8 @@ export const Button = ({ dispatch, globalState }: AddonProps) => {
                   ...(globalState.theme === ThemeState.Light
                     ? chromeLight
                     : chromeDark),
-                  BASE_BACKGROUND_COLOR: "var(--ladle-bg-color-secondary)",
+                  BASE_BACKGROUND_COLOR:
+                    "var(--ginger-book-bg-color-secondary)",
                 } as any
               }
               showNonenumerable={false}

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useLadleContext } from "./context";
+import { useGingerBookContext } from "./context";
 import { getQuery } from "./addons/control";
 import { ActionType, ControlType, ControlState } from "../../shared/types";
 
@@ -28,7 +28,7 @@ const ArgsProvider = ({
   args: any;
   argTypes: any;
 }) => {
-  const { globalState, dispatch } = useLadleContext();
+  const { globalState, dispatch } = useGingerBookContext();
   const actionLogger = (name: String) => (event: Event) => {
     dispatch({
       type: ActionType.UpdateAction,
@@ -99,7 +99,7 @@ const ArgsProvider = ({
           bgControls++;
           if (bgControls > 1) {
             throw new Error(
-              "There can be only single argType with the type background since it's used to change Ladle's background color.",
+              "There can be only single argType with the type background since it's used to change Ginger Book's background color.",
             );
           }
         }

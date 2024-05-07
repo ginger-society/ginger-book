@@ -2,7 +2,7 @@ import { config } from "virtual:generated-list";
 import { Code, Link } from "./ui";
 
 const NoStories = () => (
-  <div className="ladle-error-content">
+  <div className="ginger-book-error-content">
     <h1>No stories found</h1>
     <p>
       The configured glob pattern for stories is: <Code>{config.stories}</Code>.

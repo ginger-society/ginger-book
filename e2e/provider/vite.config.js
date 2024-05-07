@@ -4,6 +4,6 @@ export default {
     host: "127.0.0.1",
   },
   define: {
-    LADLE_PROJECT_PATH: JSON.stringify("project/aaa/"),
+    GINGER_BOOK_PROJECT_PATH: JSON.stringify("project/aaa/"),
   },
 };

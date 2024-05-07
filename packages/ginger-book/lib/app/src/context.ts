@@ -1,15 +1,15 @@
 import * as React from "react";
 //@ts-ignore
-import LadleContext from "@ladle/react-context";
+import GingerBookContext from "@ladle/react-context";
 import type { GlobalAction, GlobalState } from "../../shared/types";
 
 export const Context: React.Context<{
   globalState: GlobalState;
   dispatch: React.Dispatch<GlobalAction>;
-}> = LadleContext;
+}> = GingerBookContext;
 
-export const useLadleContext = () =>
+export const useGingerBookContext = () =>
   React.useContext<{
     globalState: GlobalState;
     dispatch: React.Dispatch<GlobalAction>;
-  }>(LadleContext);
+  }>(GingerBookContext);

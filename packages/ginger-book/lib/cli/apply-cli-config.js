@@ -12,7 +12,7 @@ export default async function applyCLIConfig(params) {
   debug(`CLI host: ${params.host || "undefined"}`);
   debug(`CLI port: ${params.port || "undefined"}`);
   debug(`CLI out: ${params.outDir || "undefined"}`);
-  params.config = params.config || ".ladle";
+  params.config = params.config || ".ginger-book";
   const configFolder = path.isAbsolute(params.config)
     ? params.config
     : path.join(process.cwd(), params.config);
@@ -23,6 +23,7 @@ export default async function applyCLIConfig(params) {
   }
   merge(config, params);
   debug(`Final config:\n${JSON.stringify(config, null, "  ")}`);
-  process.env["VITE_PUBLIC_LADLE_THEME"] = config.addons.theme.defaultState;
+  process.env["VITE_PUBLIC_GINGER_BOOK_THEME"] =
+    config.addons.theme.defaultState;
   return { configFolder, config };
 }

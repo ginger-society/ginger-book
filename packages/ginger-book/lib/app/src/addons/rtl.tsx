@@ -26,14 +26,14 @@ export const Button = ({ dispatch, globalState }: AddonProps) => {
       <button
         aria-label={globalState.rtl ? ltrText : rtlText}
         title={globalState.rtl ? ltrText : rtlText}
-        className={globalState.rtl ? "ladle-active" : ""}
+        className={globalState.rtl ? "ginger-book-active" : ""}
         onClick={() =>
           dispatch({ type: ActionType.UpdateRtl, value: !globalState.rtl })
         }
         type="button"
       >
         <Rtl />
-        <span className="ladle-addon-tooltip">
+        <span className="ginger-book-addon-tooltip">
           {globalState.rtl ? ltrText : rtlText}
         </span>
         <label>Right to left</label>

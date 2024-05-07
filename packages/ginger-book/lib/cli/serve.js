@@ -10,7 +10,7 @@ import getAppId from "./get-app-id.js";
  */
 const serve = async (params = {}) => {
   debug("Starting serve command");
-  process.env["VITE_LADLE_APP_ID"] = getAppId();
+  process.env["VITE_GINGER_BOOK_APP_ID"] = getAppId();
   const { configFolder, config } = await applyCLIConfig(params);
   await viteDev(config, configFolder);
 };

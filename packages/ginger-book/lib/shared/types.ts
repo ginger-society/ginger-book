@@ -234,7 +234,7 @@ export type Config = {
     msw: {
       enabled: boolean;
     };
-    ladle: {
+    gingerBook: {
       enabled: boolean;
     };
     width: {

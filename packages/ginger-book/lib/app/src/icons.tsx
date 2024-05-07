@@ -18,7 +18,7 @@ export const Close = () => {
   );
 };
 
-export const Ladle = () => {
+export const GingerBook = () => {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -57,8 +57,8 @@ export const Ring = () => {
     return () => document.documentElement.setAttribute("data-storyloaded", "");
   }, []);
   return (
-    <div className="ladle-ring-wrapper">
-      <div className="ladle-ring">
+    <div className="ginger-book-ring-wrapper">
+      <div className="ginger-book-ring">
         <div />
         <div />
         <div />

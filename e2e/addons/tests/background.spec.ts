@@ -5,7 +5,7 @@ test("global argTypes and args exist", async ({ page }) => {
   const button = page.locator('[data-testid="addon-control"]');
   await button.click();
   //await page.check("#cities-Prague");
-  await expect(page.locator(".ladle-controls-table")).toContainText(
+  await expect(page.locator(".ginger-book-controls-table")).toContainText(
     "Main backgroundPurple funbluewhitepinktest",
   );
 });
@@ -16,7 +16,7 @@ test("change background color", async ({ page }) => {
   await button.click();
   await page.check("#background-pink");
 
-  const bgDiv = page.locator(".ladle-background");
+  const bgDiv = page.locator(".ginger-book-background");
   const color = await bgDiv.evaluate((e: any) => {
     return window.getComputedStyle(e).getPropertyValue("background-color");
   });

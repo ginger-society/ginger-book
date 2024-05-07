@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("when directly open the story, remain non-ladle query parameters", async ({
+test("when directly open the story, remain non-ginger-book query parameters", async ({
   page,
 }) => {
   await page.goto("/?story=query-parameters--query-parameters");
@@ -10,7 +10,7 @@ test("when directly open the story, remain non-ladle query parameters", async ({
   expect(url).toContain("foo=bar");
 });
 
-test("when click the menu and open the story, remain non-ladle query parameters", async ({
+test("when click the menu and open the story, remain non-ginger-book query parameters", async ({
   page,
 }) => {
   await page.goto("/?story=a11y--issues"); // Open a some story
@@ -22,7 +22,7 @@ test("when click the menu and open the story, remain non-ladle query parameters"
   expect(url).toContain("foo=bar");
 });
 
-test("when move a story from the query parameters story, remove non-ladle query parameters", async ({
+test("when move a story from the query parameters story, remove non-ginger-book query parameters", async ({
   page,
 }) => {
   // Open the query parameters story
@@ -35,10 +35,10 @@ test("when move a story from the query parameters story, remove non-ladle query 
   await page.waitForSelector("[data-storyloaded]");
   const url = page.url();
   expect(url).toContain("story=a11y--issues");
-  expect(url).not.toContain("foo=bar"); // The non-ladle query parameter is removed
+  expect(url).not.toContain("foo=bar"); // The non-ginger-book query parameter is removed
 });
 
-test("preserve user query params after ladle query param update", async ({
+test("preserve user query params after ginger-book query param update", async ({
   page,
 }) => {
   await page.goto("/?story=query-parameters--query-parameters");

@@ -6,7 +6,7 @@ import { pathToFileURL } from "url";
 /**
  * @param config {import("../../../shared/types").Config}
  */
-const ladleConfigToClientConfig = (config) => {
+const gingerBookConfigToClientConfig = (config) => {
   return {
     ...(config.stories ? { stories: config.stories } : {}),
     ...(config.addons ? { addons: config.addons } : {}),
@@ -26,7 +26,7 @@ const ladleConfigToClientConfig = (config) => {
 };
 
 /**
- * @description Load ladle opts from file, then from the progrmatic API, select
+ * @description Load GingerBook opts from file, then from the progrmatic API, select
  * a subset for the client and serialize it.
  * @param {string} configFolder
  * @param config {import("../../../shared/types").Config}
@@ -38,9 +38,9 @@ const getConfigImport = async (configFolder, config) => {
   if (fs.existsSync(configPath)) {
     const fileConfig = (await import(pathToFileURL(configPath).href)).default;
     // @ts-ignore
-    clientConfig = ladleConfigToClientConfig(fileConfig);
+    clientConfig = gingerBookConfigToClientConfig(fileConfig);
   }
-  merge(clientConfig, ladleConfigToClientConfig(config));
+  merge(clientConfig, gingerBookConfigToClientConfig(config));
   // don't merge hotkeys
   // @ts-ignore
   clientConfig.hotkeys = {

@@ -1,3 +1,3 @@
 import debug from "debug";
 
-export default debug("ladle:cli");
+export default debug("ginger-book:cli");

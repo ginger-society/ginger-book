@@ -98,8 +98,8 @@ const Main = ({
         role="separator"
         aria-orientation="vertical"
         ref={handleRef}
-        className={cx("ladle-resize-handle", {
-          "ladle-resize-active": resizeActive,
+        className={cx("ginger-book-resize-handle", {
+          "ginger-book-resize-active": resizeActive,
         })}
         onDragStart={(e) => e.preventDefault()}
         onDragEnd={(e) => e.preventDefault()}
@@ -117,7 +117,7 @@ const Main = ({
       />
       <nav
         role="navigation"
-        className="ladle-aside"
+        className="ginger-book-aside"
         style={{ minWidth: `${width}px` }}
       >
         <input

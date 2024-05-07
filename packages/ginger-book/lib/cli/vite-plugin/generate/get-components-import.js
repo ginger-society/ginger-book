@@ -5,7 +5,7 @@ import { traverse } from "../babel.js";
 import getAst from "../get-ast.js";
 import cleanupWindowsPath from "./cleanup-windows-path.js";
 
-const debug = debugFactory("ladle:vite");
+const debug = debugFactory("ginger-book:vite");
 
 /**
  * @param {string} namedExport
@@ -33,7 +33,7 @@ const checkIfNamedExportExists = (namedExport, sourceCode, filename) => {
  */
 const getComponents = (configFolder) => {
   let defaultProvider = `export const Provider = ({children}) => /*#__PURE__*/createElement(Fragment, null, children);\n`;
-  let defaultStorySourceHeader = `export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ladle-code" }, path));\n`;
+  let defaultStorySourceHeader = `export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ginger-book-code" }, path));\n`;
   let defaultArgs = `export const args = {};\n`;
   let defaultArgTypes = `export const argTypes = {};\n`;
   const componentsPaths = [

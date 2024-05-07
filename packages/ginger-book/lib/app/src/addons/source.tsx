@@ -49,7 +49,7 @@ export const CodeHighlight = ({
           ...(theme === "dark" ? themes.nightOwl : themes.github),
           plain: {
             ...(theme === "dark" ? themes.nightOwl : themes.github).plain,
-            backgroundColor: "var(--ladle-bg-color-secondary)",
+            backgroundColor: "var(--ginger-book-bg-color-secondary)",
           },
         }}
       >
@@ -85,7 +85,7 @@ export const CodeHighlight = ({
           ...(theme === "dark" ? themes.nightOwl : themes.github),
           plain: {
             ...(theme === "dark" ? themes.nightOwl : themes.github).plain,
-            backgroundColor: "var(--ladle-bg-color-secondary)",
+            backgroundColor: "var(--ginger-book-bg-color-secondary)",
           },
         }}
       >
@@ -104,16 +104,16 @@ export const CodeHighlight = ({
             {tokens.map((line, i) => (
               <div
                 key={i}
-                id={`ladle_loc_${i + 1}`}
+                id={`ginger_book_loc_${i + 1}`}
                 {...getLineProps({ line, key: i })}
                 style={{ display: "table-row" }}
               >
                 <span
-                  className="ladle-addon-source-lineno"
+                  className="ginger-book-addon-source-lineno"
                   style={
                     i + 1 >= locStart && i + 1 <= locEnd
                       ? {
-                          backgroundColor: "var(--ladle-color-accent)",
+                          backgroundColor: "var(--ginger-book-color-accent)",
                           color: "#FFF",
                         }
                       : undefined
@@ -148,7 +148,7 @@ const CodeFrame = ({ globalState }: { globalState: GlobalState }) => {
   const { entry, locStart, locEnd } = stories[globalState.story];
   React.useEffect(() => {
     window.location.hash = ``;
-    window.location.hash = `ladle_loc_${locStart}`;
+    window.location.hash = `ginger_book_loc_${locStart}`;
   }, [locStart]);
   return (
     <>
@@ -196,7 +196,7 @@ export const Button = ({ globalState, dispatch }: AddonProps) => {
         type="button"
       >
         <Source />
-        <span className="ladle-addon-tooltip">{text}</span>
+        <span className="ginger-book-addon-tooltip">{text}</span>
         <label>Story Source Code</label>
         <Modal
           isOpen={globalState.source}

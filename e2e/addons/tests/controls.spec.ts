@@ -53,7 +53,7 @@ test("range control works", async ({ page }) => {
   const button = page.locator('[data-testid="addon-control"]');
   await button.click();
   const rangeControl = page.locator(
-    '[data-testid="ladle-dialog"] >> tr:has(:text("range"))',
+    '[data-testid="ginger-book-dialog"] >> tr:has(:text("range"))',
   );
   await expect(rangeControl).toContainText("1");
   await expect(rangeControl).toContainText("1 / 10");

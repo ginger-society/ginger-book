@@ -1,13 +1,15 @@
 import { test, expect } from "@playwright/test";
 
-test("ladle context is correctly passed to decorators", async ({ page }) => {
+test("ginger book context is correctly passed to decorators", async ({
+  page,
+}) => {
   await page.goto("/?story=args--card-hello");
   await expect(page.locator("main")).toHaveText(
     "third Hellosecond Hellofirst Helloprivate HelloLabel: Hello",
   );
 });
 
-test("ladle doesn't remount story when control (state) is changed", async ({
+test("ginger book doesn't remount story when control (state) is changed", async ({
   page,
 }) => {
   await page.goto("/?story=args--card-hello");

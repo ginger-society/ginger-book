@@ -81,9 +81,10 @@ const App = () => {
     },
   );
   React.useEffect(() => {
-    // @ts-ignore
-    document.getElementsByClassName("ladle-background")[0].style.background =
-      customBackground;
+    document.getElementsByClassName(
+      "ginger-book-background",
+      // @ts-ignore
+    )[0].style.background = customBackground;
   }, [customBackground]);
 
   React.useEffect(() => {
@@ -93,7 +94,7 @@ const App = () => {
     // a workaround to allow APIs like action() and linkTo() getting around
     // the context hook limitations
     //@ts-ignore
-    window.ladleDispatch = dispatch;
+    window.gingerBookDispatch = dispatch;
   }, []);
   const prevGlobalState = prevGlobalStateRef.current;
   React.useEffect(() => {
@@ -103,7 +104,7 @@ const App = () => {
     }
     modifyParams(globalState);
     if (globalState.story !== prevGlobalState.story) {
-      document.title = `${storyIdToTitle(globalState.story)} | Ladle`;
+      document.title = `${storyIdToTitle(globalState.story)} | Ginger Book`;
     }
     if (globalState.theme !== prevGlobalState.theme) {
       document.documentElement.setAttribute("data-theme", globalState.theme);
@@ -118,11 +119,11 @@ const App = () => {
     if (globalState.mode !== prevGlobalState.mode) {
       document.documentElement.setAttribute("data-mode", globalState.mode);
       if (globalState.mode === ModeState.Preview) {
-        document.getElementById("ladle-root")?.removeAttribute("class");
+        document.getElementById("ginger-book-root")?.removeAttribute("class");
       } else {
         document
-          .getElementById("ladle-root")
-          ?.setAttribute("class", "ladle-wrapper");
+          .getElementById("ginger-book-root")
+          ?.setAttribute("class", "ginger-book-wrapper");
       }
     }
   }, [globalState]);
@@ -167,7 +168,7 @@ const App = () => {
   }
   return (
     <Context.Provider value={{ globalState, dispatch }}>
-      <main className="ladle-main">
+      <main className="ginger-book-main">
         {stories.length > 0 ? (
           <Story globalState={globalState} dispatch={dispatch} />
         ) : errorMessage ? (

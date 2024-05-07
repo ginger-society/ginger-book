@@ -42,11 +42,11 @@ export function MDXContent(props = {}) {
   } = props.components || {};
   return MDXLayout ? <MDXLayout {...props}><_createMdxContent {...props} /></MDXLayout> : _createMdxContent(props);
 }
-export const LadleStory0 = () => <><input /><button>{"simple"}</button></>;
-LadleStory0.storyName = "First";
-export const LadleStory2 = () => <><input /><button>{"second"}</button></>;
-LadleStory2.storyName = "Second";
-LadleStory2.args = {
+export const GingerBookStory0 = () => <><input /><button>{"simple"}</button></>;
+GingerBookStory0.storyName = "First";
+export const GingerBookStory2 = () => <><input /><button>{"second"}</button></>;
+GingerBookStory2.storyName = "Second";
+GingerBookStory2.args = {
   disabled: true
 };
 MDXContent.storyName = 'Readme';"

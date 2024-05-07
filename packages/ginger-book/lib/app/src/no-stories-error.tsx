@@ -4,7 +4,7 @@ import { Link } from "./ui";
 const NoStoriesError = ({ error }: { error: string }) => {
   console.log(error);
   return (
-    <div className="ladle-error-content">
+    <div className="ginger-book-error-content">
       <h1>SyntaxError when parsing stories ❌</h1>
       <pre>{error}</pre>
       <p>Check the terminal for more info.</p>
@@ -14,7 +14,7 @@ const NoStoriesError = ({ error }: { error: string }) => {
         </Link>
       </p>
       <p>
-        <strong>Please restart Ladle after fixing this issue.</strong>
+        <strong>Please restart GingerBook after fixing this issue.</strong>
       </p>
       <p>
         <Link href="https://github.com/ginger-society/ginger-book">Github</Link>

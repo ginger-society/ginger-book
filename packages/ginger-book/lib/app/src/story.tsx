@@ -32,7 +32,7 @@ const StoryFrame = ({
       title={`Story ${story}`}
       initialContent={`<!DOCTYPE html><html><head><base target="_parent" /></head><body style="margin:0"><div id="root"></div></body></html>`}
       mountTarget="#root"
-      className="ladle-iframe"
+      className="ginger-book-iframe"
       style={{ width: width || "100%" }}
     >
       {children}

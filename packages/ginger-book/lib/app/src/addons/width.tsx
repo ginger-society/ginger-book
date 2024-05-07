@@ -53,7 +53,7 @@ export const Button = ({ globalState, dispatch }: AddonProps) => {
         type="button"
       >
         <Width />
-        <span className="ladle-addon-tooltip">{text}</span>
+        <span className="ginger-book-addon-tooltip">{text}</span>
         <label>Set story width</label>
         <Modal
           isOpen={open}

@@ -102,7 +102,7 @@ const transformPlugin = (babel) => {
             }
             if (specifierName === "Story") {
               refPaths.forEach((refPath, index) => {
-                let identifier = `LadleStory${index}`;
+                let identifier = `GingerBookStory${index}`;
                 const parentPath = refPath.parentPath;
                 if (!t.isJSXOpeningElement(parentPath)) {
                   return;

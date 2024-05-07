@@ -14,7 +14,8 @@ export const getQuery = (locationSearch: string) => {
     case ThemeState.Auto:
       return ThemeState.Auto;
     default:
-      return (import.meta as any).env.VITE_PUBLIC_LADLE_THEME as ThemeState;
+      return (import.meta as any).env
+        .VITE_PUBLIC_GINGER_BOOK_THEME as ThemeState;
   }
 };
 
@@ -43,7 +44,7 @@ export const Button = ({ globalState, dispatch }: AddonProps) => {
         type="button"
       >
         <Bulb />
-        <span className="ladle-addon-tooltip">
+        <span className="ginger-book-addon-tooltip">
           {globalState.theme === ThemeState.Light ? darkText : lightText}
         </span>
         <label>

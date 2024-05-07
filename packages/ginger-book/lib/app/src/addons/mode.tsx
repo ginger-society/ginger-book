@@ -30,7 +30,7 @@ export const Button = ({ dispatch }: AddonProps) => {
         type="button"
       >
         <Preview />
-        <span className="ladle-addon-tooltip">{text}</span>
+        <span className="ginger-book-addon-tooltip">{text}</span>
         <label>Open fullscreen mode</label>
       </button>
     </li>

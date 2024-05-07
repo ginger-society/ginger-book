@@ -6,7 +6,7 @@ import { Button as ModeButton } from "./addons/mode";
 import { Button as ActionButton } from "./addons/action";
 import { Button as RtlButton } from "./addons/rtl";
 import { Button as SourceButton } from "./addons/source";
-import { Button as LadleButton } from "./addons/ladle";
+import { Button as GingerBookButton } from "./addons/ginger-book";
 import { Button as A11yButton } from "./addons/a11y";
 import { Button as WidthButton } from "./addons/width";
 import config from "./get-config";
@@ -28,7 +28,7 @@ const AddonPanel = ({
     return null;
   }
   return (
-    <header role="banner" className="ladle-addons">
+    <header role="banner" className="ginger-book-addons">
       <ul>
         {config.addons.control.enabled &&
           Object.keys(globalState.control).length > 0 && (
@@ -52,8 +52,8 @@ const AddonPanel = ({
         {config.addons.a11y.enabled && (
           <A11yButton globalState={globalState} dispatch={dispatch} />
         )}
-        {config.addons.ladle.enabled && (
-          <LadleButton globalState={globalState} dispatch={dispatch} />
+        {config.addons.gingerBook.enabled && (
+          <GingerBookButton globalState={globalState} dispatch={dispatch} />
         )}
         {config.addons.control.enabled && globalState.action.length > 0 && (
           <ActionButton globalState={globalState} dispatch={dispatch} />

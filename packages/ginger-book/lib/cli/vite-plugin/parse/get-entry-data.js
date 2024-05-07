@@ -10,7 +10,7 @@ import getNamedExports from "./get-named-exports.js";
 import { IMPORT_ROOT } from "../utils.js";
 import mdxToStories from "../mdx-to-stories.js";
 
-const debug = debugFactory("ladle:vite");
+const debug = debugFactory("ginger-book:vite");
 
 /**
  * @param {string[]} entries

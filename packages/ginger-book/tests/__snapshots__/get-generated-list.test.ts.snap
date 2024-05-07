@@ -32,7 +32,7 @@ export let stories = {
 export let config = {"stories":"src/**/*.stories.{js,jsx,ts,tsx,mdx}","addons":{"control":{"enabled":true,"defaultState":{}},"theme":{"enabled":true,"defaultState":"light"},"mode":{"enabled":true,"defaultState":"full"},"rtl":{"enabled":true,"defaultState":false},"source":{"enabled":true,"defaultState":false},"a11y":{"enabled":false},"msw":{"enabled":false},"action":{"enabled":true,"defaultState":[]},"ladle":{"enabled":true},"width":{"enabled":true,"options":{"xsmall":414,"small":640,"medium":768,"large":1024},"defaultState":0}},"hotkeys":{"search":["/","meta+p"],"nextStory":["alt+arrowright"],"previousStory":["alt+arrowleft"],"nextComponent":["alt+arrowdown"],"previousComponent":["alt+arrowup"],"control":["c"],"darkMode":["d"],"fullscreen":["f"],"width":["w"],"rtl":["r"],"source":["s"],"a11y":["a"]},"i18n":{"buildTooltip":"💡 Tip: Run \\"ginger-book preview\\" to check that the build works!"},"storyOrder":"(stories) => stories"};
 
 export const Provider = ({children}) => /*#__PURE__*/createElement(Fragment, null, children);
-export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ladle-code" }, path));
+export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ginger-book-code" }, path));
 export const args = {};
 export const argTypes = {};
 
@@ -70,7 +70,7 @@ export let stories = {
 export let config = {"stories":"src/**/*.stories.{js,jsx,ts,tsx,mdx}","addons":{"control":{"enabled":true,"defaultState":{}},"theme":{"enabled":true,"defaultState":"light"},"mode":{"enabled":true,"defaultState":"full"},"rtl":{"enabled":true,"defaultState":false},"source":{"enabled":true,"defaultState":false},"a11y":{"enabled":false},"msw":{"enabled":false},"action":{"enabled":true,"defaultState":[]},"ladle":{"enabled":true},"width":{"enabled":true,"options":{"xsmall":414,"small":640,"medium":768,"large":1024},"defaultState":0}},"hotkeys":{"search":["/","meta+p"],"nextStory":["alt+arrowright"],"previousStory":["alt+arrowleft"],"nextComponent":["alt+arrowdown"],"previousComponent":["alt+arrowup"],"control":["c"],"darkMode":["d"],"fullscreen":["f"],"width":["w"],"rtl":["r"],"source":["s"],"a11y":["a"]},"i18n":{"buildTooltip":"💡 Tip: Run \\"ginger-book preview\\" to check that the build works!"},"storyOrder":"(stories) => stories"};
 
 export const Provider = ({children}) => /*#__PURE__*/createElement(Fragment, null, children);
-export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ladle-code" }, path));
+export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ginger-book-code" }, path));
 export const args = {};
 export const argTypes = {};
 
@@ -107,7 +107,7 @@ export let stories = {
 export let config = {"stories":"src/**/*.stories.{js,jsx,ts,tsx,mdx}","addons":{"control":{"enabled":true,"defaultState":{}},"theme":{"enabled":true,"defaultState":"light"},"mode":{"enabled":true,"defaultState":"full"},"rtl":{"enabled":true,"defaultState":false},"source":{"enabled":true,"defaultState":false},"a11y":{"enabled":false},"msw":{"enabled":false},"action":{"enabled":true,"defaultState":[]},"ladle":{"enabled":true},"width":{"enabled":true,"options":{"xsmall":414,"small":640,"medium":768,"large":1024},"defaultState":0}},"hotkeys":{"search":["/","meta+p"],"nextStory":["alt+arrowright"],"previousStory":["alt+arrowleft"],"nextComponent":["alt+arrowdown"],"previousComponent":["alt+arrowup"],"control":["c"],"darkMode":["d"],"fullscreen":["f"],"width":["w"],"rtl":["r"],"source":["s"],"a11y":["a"]},"i18n":{"buildTooltip":"💡 Tip: Run \\"ginger-book preview\\" to check that the build works!"},"storyOrder":"(stories) => stories"};
 
 export const Provider = ({children}) => /*#__PURE__*/createElement(Fragment, null, children);
-export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ladle-code" }, path));
+export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ginger-book-code" }, path));
 export const args = {};
 export const argTypes = {};
 
@@ -175,7 +175,7 @@ export let stories = {
 export let config = {"stories":"src/**/*.stories.{js,jsx,ts,tsx,mdx}","addons":{"control":{"enabled":true,"defaultState":{}},"theme":{"enabled":true,"defaultState":"light"},"mode":{"enabled":true,"defaultState":"full"},"rtl":{"enabled":true,"defaultState":false},"source":{"enabled":true,"defaultState":false},"a11y":{"enabled":false},"msw":{"enabled":false},"action":{"enabled":true,"defaultState":[]},"ladle":{"enabled":true},"width":{"enabled":true,"options":{"xsmall":414,"small":640,"medium":768,"large":1024},"defaultState":0}},"hotkeys":{"search":["/","meta+p"],"nextStory":["alt+arrowright"],"previousStory":["alt+arrowleft"],"nextComponent":["alt+arrowdown"],"previousComponent":["alt+arrowup"],"control":["c"],"darkMode":["d"],"fullscreen":["f"],"width":["w"],"rtl":["r"],"source":["s"],"a11y":["a"]},"i18n":{"buildTooltip":"💡 Tip: Run \\"ginger-book preview\\" to check that the build works!"},"storyOrder":"(stories) => stories"};
 
 export const Provider = ({children}) => /*#__PURE__*/createElement(Fragment, null, children);
-export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ladle-code" }, path));
+export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ginger-book-code" }, path));
 export const args = {};
 export const argTypes = {};
 
@@ -221,7 +221,7 @@ export let stories = {
 export let config = {"stories":"src/**/*.stories.{js,jsx,ts,tsx,mdx}","addons":{"control":{"enabled":true,"defaultState":{}},"theme":{"enabled":true,"defaultState":"light"},"mode":{"enabled":true,"defaultState":"full"},"rtl":{"enabled":true,"defaultState":false},"source":{"enabled":true,"defaultState":false},"a11y":{"enabled":false},"msw":{"enabled":false},"action":{"enabled":true,"defaultState":[]},"ladle":{"enabled":true},"width":{"enabled":true,"options":{"xsmall":414,"small":640,"medium":768,"large":1024},"defaultState":0}},"hotkeys":{"search":["/","meta+p"],"nextStory":["alt+arrowright"],"previousStory":["alt+arrowleft"],"nextComponent":["alt+arrowdown"],"previousComponent":["alt+arrowup"],"control":["c"],"darkMode":["d"],"fullscreen":["f"],"width":["w"],"rtl":["r"],"source":["s"],"a11y":["a"]},"i18n":{"buildTooltip":"💡 Tip: Run \\"ginger-book preview\\" to check that the build works!"},"storyOrder":"(stories) => stories"};
 
 export const Provider = ({children}) => /*#__PURE__*/createElement(Fragment, null, children);
-export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ladle-code" }, path));
+export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ginger-book-code" }, path));
 export const args = {};
 export const argTypes = {};
 
@@ -269,7 +269,7 @@ export let stories = {
 export let config = {"stories":"src/**/*.stories.{js,jsx,ts,tsx,mdx}","addons":{"control":{"enabled":true,"defaultState":{}},"theme":{"enabled":true,"defaultState":"light"},"mode":{"enabled":true,"defaultState":"full"},"rtl":{"enabled":true,"defaultState":false},"source":{"enabled":true,"defaultState":false},"a11y":{"enabled":false},"msw":{"enabled":false},"action":{"enabled":true,"defaultState":[]},"ladle":{"enabled":true},"width":{"enabled":true,"options":{"xsmall":414,"small":640,"medium":768,"large":1024},"defaultState":0}},"hotkeys":{"search":["/","meta+p"],"nextStory":["alt+arrowright"],"previousStory":["alt+arrowleft"],"nextComponent":["alt+arrowdown"],"previousComponent":["alt+arrowup"],"control":["c"],"darkMode":["d"],"fullscreen":["f"],"width":["w"],"rtl":["r"],"source":["s"],"a11y":["a"]},"i18n":{"buildTooltip":"💡 Tip: Run \\"ginger-book preview\\" to check that the build works!"},"storyOrder":"(stories) => stories"};
 
 export const Provider = ({children}) => /*#__PURE__*/createElement(Fragment, null, children);
-export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ladle-code" }, path));
+export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ginger-book-code" }, path));
 export const args = {};
 export const argTypes = {};
 
@@ -329,7 +329,7 @@ export let stories = {
 export let config = {"stories":"src/**/*.stories.{js,jsx,ts,tsx,mdx}","addons":{"control":{"enabled":true,"defaultState":{}},"theme":{"enabled":true,"defaultState":"light"},"mode":{"enabled":true,"defaultState":"full"},"rtl":{"enabled":true,"defaultState":false},"source":{"enabled":true,"defaultState":false},"a11y":{"enabled":false},"msw":{"enabled":false},"action":{"enabled":true,"defaultState":[]},"ladle":{"enabled":true},"width":{"enabled":true,"options":{"xsmall":414,"small":640,"medium":768,"large":1024},"defaultState":0}},"hotkeys":{"search":["/","meta+p"],"nextStory":["alt+arrowright"],"previousStory":["alt+arrowleft"],"nextComponent":["alt+arrowdown"],"previousComponent":["alt+arrowup"],"control":["c"],"darkMode":["d"],"fullscreen":["f"],"width":["w"],"rtl":["r"],"source":["s"],"a11y":["a"]},"i18n":{"buildTooltip":"💡 Tip: Run \\"ginger-book preview\\" to check that the build works!"},"storyOrder":"(stories) => stories"};
 
 export const Provider = ({children}) => /*#__PURE__*/createElement(Fragment, null, children);
-export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ladle-code" }, path));
+export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ginger-book-code" }, path));
 export const args = {};
 export const argTypes = {};
 
@@ -368,7 +368,7 @@ export let stories = {
 export let config = {"stories":"src/**/*.stories.{js,jsx,ts,tsx,mdx}","addons":{"control":{"enabled":true,"defaultState":{}},"theme":{"enabled":true,"defaultState":"light"},"mode":{"enabled":true,"defaultState":"full"},"rtl":{"enabled":true,"defaultState":false},"source":{"enabled":true,"defaultState":false},"a11y":{"enabled":false},"msw":{"enabled":false},"action":{"enabled":true,"defaultState":[]},"ladle":{"enabled":true},"width":{"enabled":true,"options":{"xsmall":414,"small":640,"medium":768,"large":1024},"defaultState":0}},"hotkeys":{"search":["/","meta+p"],"nextStory":["alt+arrowright"],"previousStory":["alt+arrowleft"],"nextComponent":["alt+arrowdown"],"previousComponent":["alt+arrowup"],"control":["c"],"darkMode":["d"],"fullscreen":["f"],"width":["w"],"rtl":["r"],"source":["s"],"a11y":["a"]},"i18n":{"buildTooltip":"💡 Tip: Run \\"ginger-book preview\\" to check that the build works!"},"storyOrder":"(stories) => stories"};
 
 export const Provider = ({children}) => /*#__PURE__*/createElement(Fragment, null, children);
-export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ladle-code" }, path));
+export const StorySourceHeader = ({ path }) => /*#__PURE__*/createElement('div', { style: { paddingTop: "2em" }}, /*#__PURE__*/createElement('code', { className: "ginger-book-code" }, path));
 export const args = {};
 export const argTypes = {};
 

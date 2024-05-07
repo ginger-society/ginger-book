@@ -1,8 +1,8 @@
 // @ts-ignore
-import { useLadleContext } from "@ginger-society/ginger-book";
+import { useGingerBookContext } from "@ginger-society/ginger-book";
 
 function Context() {
-  const { globalState } = useLadleContext();
+  const { globalState } = useGingerBookContext();
   return <div id="context-div">{JSON.stringify(globalState)}</div>;
 }
 

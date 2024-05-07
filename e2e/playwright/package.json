@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "ginger-book serve -p 61110",
     "serve-prod": "ginger-book preview -p 61110",
-    "build-preview": "ginger-book build && ladle preview -p 61110",
+    "build-preview": "ginger-book build && ginger-book preview -p 61110",
     "build": "ginger-book build",
     "lint": "echo 'no lint'",
     "test-dev": "cross-env TYPE=dev pnpm exec playwright test",

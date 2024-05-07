@@ -3,7 +3,7 @@ import { loadConfigFromFile } from "vite";
 import debug from "./debug.js";
 
 // vite.config.js paths are relative to the project root
-// but for ladle, the root is in a different package, so
+// but for ginger-book, the root is in a different package, so
 // we just magically fix it for the user
 // users can should use absolute paths in the config to be safe
 

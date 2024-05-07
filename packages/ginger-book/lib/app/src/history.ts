@@ -18,7 +18,7 @@ const removeDefaultValues = (params: Partial<GlobalState>) => {
     const val = params[key as keyof GlobalState];
     const defaultVal = (config.addons as any)[key]
       ? (config.addons as any)[key].defaultState
-      : "$$LADLE_unknown";
+      : "$$GINGER_BOOK_unknown";
     if (val === defaultVal) {
       //@ts-ignore
       delete params[key];

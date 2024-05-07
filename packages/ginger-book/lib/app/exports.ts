@@ -1,5 +1,5 @@
 import type * as React from "react";
-import { useLadleContext } from "./src/context";
+import { useGingerBookContext } from "./src/context";
 import {
   StoryDecorator,
   ActionType,
@@ -27,24 +27,24 @@ type ReactNodeWithoutObject =
   | null
   | undefined;
 
-export { useLadleContext, ActionType, ThemeState, ModeState };
+export { useGingerBookContext, ActionType, ThemeState, ModeState };
 export type { StoryDecorator };
 
 // deprecated, linkTo is just easier to use
 export const useLink = () => {
-  const { dispatch } = useLadleContext();
+  const { dispatch } = useGingerBookContext();
   return (value: string) => dispatch({ type: ActionType.UpdateStory, value });
 };
 
 export const linkTo = (value: string) => {
   const dispatch = (window as any)
-    .ladleDispatch as React.Dispatch<GlobalAction>;
+    .gingerBookDispatch as React.Dispatch<GlobalAction>;
   return () => dispatch({ type: ActionType.UpdateStory, value });
 };
 
 export const action = (name: string) => {
   const dispatch = (window as any)
-    .ladleDispatch as React.Dispatch<GlobalAction>;
+    .gingerBookDispatch as React.Dispatch<GlobalAction>;
   return (event: any = undefined) =>
     dispatch({
       type: ActionType.UpdateAction,

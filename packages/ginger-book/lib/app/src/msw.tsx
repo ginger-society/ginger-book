@@ -13,10 +13,10 @@ const Msw = ({
     const initMsw = async () => {
       if (msw.length > 0) {
         const { setupWorker } = await import("msw/browser");
-        if (!window.__ladle_msw) {
-          window.__ladle_msw = setupWorker();
-          window.__ladle_msw.use(...msw);
-          window.__ladle_msw
+        if (!window.__ginger_book_msw) {
+          window.__ginger_book_msw = setupWorker();
+          window.__ginger_book_msw.use(...msw);
+          window.__ginger_book_msw
             .start({
               serviceWorker: {
                 url: `${(import.meta as any).env.BASE_URL}mockServiceWorker.js`,
@@ -26,15 +26,15 @@ const Msw = ({
               setReady(true);
             });
         } else {
-          window.__ladle_msw.use(...msw);
+          window.__ginger_book_msw.use(...msw);
           setReady(true);
         }
       }
     };
     initMsw();
     return () => {
-      if (window.__ladle_msw) {
-        window.__ladle_msw.resetHandlers();
+      if (window.__ginger_book_msw) {
+        window.__ginger_book_msw.resetHandlers();
       }
     };
   }, [msw]);

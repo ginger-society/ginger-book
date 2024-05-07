@@ -8,7 +8,7 @@ import { getEntryData } from "./parse/get-entry-data.js";
 import { detectDuplicateStoryNames, printError } from "./utils.js";
 import cleanupWindowsPath from "./generate/cleanup-windows-path.js";
 
-const debug = debugFactory("ladle:vite");
+const debug = debugFactory("ginger-book:vite");
 
 /**
  * @param errorMessage {string}
@@ -30,12 +30,12 @@ export const Provider = ({ children }) =>
  * @param configFolder {string}
  * @param mode {string}
  */
-function ladlePlugin(config, configFolder, mode) {
+function gingerBookPlugin(config, configFolder, mode) {
   const virtualModuleId = "virtual:generated-list";
   const resolvedVirtualModuleId = "\0" + virtualModuleId;
   const headHtmlPath = path.join(configFolder, "head.html");
   return {
-    name: "ladle:core",
+    name: "ginger-book:core",
     /**
      * @param {string} id
      */
@@ -130,4 +130,4 @@ function ladlePlugin(config, configFolder, mode) {
   };
 }
 
-export default ladlePlugin;
+export default gingerBookPlugin;

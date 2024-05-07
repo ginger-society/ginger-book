@@ -12,7 +12,7 @@ export const Provider: GlobalProvider = ({ children, storyMeta }) => (
 );
 
 //@ts-ignore
-const config: string = LADLE_PROJECT_PATH;
+const config: string = GINGER_BOOK_PROJECT_PATH;
 
 export const StorySourceHeader: SourceHeader = ({ path, locStart, locEnd }) => {
   return (

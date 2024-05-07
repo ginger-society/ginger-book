@@ -9,7 +9,7 @@ const title = storyIdToTitle(
   getQueryStory(location.search, config.defaultStory),
 );
 debug(`Initial document.title: ${title}`);
-document.title = `${title} | Ladle`;
+document.title = `${title} | Ginger Book`;
 
 const theme = getQueryTheme(location.search);
 debug(`Initial theme state: ${theme}`);

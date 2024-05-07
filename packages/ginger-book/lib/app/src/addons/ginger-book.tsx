@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Ladle } from "../icons";
+import { GingerBook } from "../icons";
 import { Modal, Code } from "../ui";
 import config from "../get-config";
 import type { AddonProps } from "../../../shared/types";
@@ -37,23 +37,23 @@ const FormattedHotkey = ({ children }: { children: string }) => {
 
 export const Button = ({ globalState }: AddonProps) => {
   const [open, setOpen] = React.useState(false);
-  const text = "Get more information about Ladle.";
+  const text = "Get more information about Ginger Book.";
   return (
     <li>
       <button
         aria-label={text}
         title={text}
         onClick={() => setOpen(true)}
-        className={open ? "ladle-active" : ""}
+        className={open ? "ginger-book-active" : ""}
         type="button"
       >
-        <Ladle />
-        <span className="ladle-addon-tooltip">{text}</span>
-        <label>About Ladle</label>
+        <GingerBook />
+        <span className="ginger-book-addon-tooltip">{text}</span>
+        <label>About Ginger Book</label>
         <Modal
           isOpen={open}
           close={() => setOpen(false)}
-          label="Dialog with information about Ladle."
+          label="Dialog with information about Ginger Book."
         >
           <h3>Hotkeys</h3>
           {globalState.hotkeys ? (
@@ -98,8 +98,8 @@ export const Button = ({ globalState }: AddonProps) => {
             </p>
           )}
           <p>
-            Ladle is a modern and fast playground for React components powered
-            by Vite. For more information visit{" "}
+            GingerBook is a modern and fast playground for React components
+            powered by Vite. For more information visit{" "}
             <a href="https://gingersociety.org/ginger-book/">
               gingersociety.org/ginger-book
             </a>{" "}

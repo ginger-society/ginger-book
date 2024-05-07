@@ -1,5 +1,5 @@
 import {
-  useLadleContext,
+  useGingerBookContext,
   ActionType,
   ThemeState,
   action,
@@ -35,7 +35,7 @@ export const Responsive: Story = () => {
           background: "#FFF",
         }}
       >
-        Ladle
+        Ginger Book
       </button>
     </>
   );
@@ -45,7 +45,7 @@ Responsive.meta = {
 };
 
 export const Issues: Story = () => {
-  const { globalState, dispatch } = useLadleContext();
+  const { globalState, dispatch } = useGingerBookContext();
   return (
     <>
       <input />

@@ -5,7 +5,7 @@ test("default story is rendered", async ({ page }) => {
   await expect(page.locator("h1")).toHaveText("Hello World");
 });
 
-test("navigation respects storyOrder from the .ladle/config.mjs", async ({
+test("navigation respects storyOrder from the .ginger-book/config.mjs", async ({
   page,
 }) => {
   await page.goto("/");

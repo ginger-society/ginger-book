@@ -2,7 +2,7 @@ import React from "react";
 import ArgsProvider from "./args-provider";
 import Msw from "./msw";
 import { args, argTypes } from "virtual:generated-list";
-import { useLadleContext } from "./context";
+import { useGingerBookContext } from "./context";
 import type { StoryDecorator } from "../../shared/types";
 import type { RequestHandler } from "msw";
 
@@ -45,7 +45,7 @@ export default function composeEnhancers(module: any, storyName: string) {
   };
 
   return function RenderDecoratedStory() {
-    const { globalState } = useLadleContext();
+    const { globalState } = useGingerBookContext();
     const WithArgs = React.useMemo(
       () =>
         function RenderWithArgs() {
@@ -60,7 +60,7 @@ export default function composeEnhancers(module: any, storyName: string) {
     if (decorators.length === 0) return <WithArgs />;
     const getBindedDecorator = (i: number) => {
       return React.useRef(() => {
-        const context = useLadleContext();
+        const context = useGingerBookContext();
         const args: { [key: string]: any } = {};
         Object.keys(context.globalState.control).forEach(
           (key) => (args[key] = context.globalState.control[key].value),

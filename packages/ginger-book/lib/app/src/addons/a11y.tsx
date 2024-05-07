@@ -110,7 +110,7 @@ export const Button = ({ globalState }: AddonProps) => {
     // re-run Axe on HMR updates, some timeout is needed to let the DOM settle
     watchers.push(() => {
       setTimeout(() => {
-        const el = document.getElementById("ladle-root") as HTMLElement;
+        const el = document.getElementById("ginger-book-root") as HTMLElement;
         // Addon Dialog aria hides the rest of page, we need to temporarily
         // make it visible for Axe function properly
         el.removeAttribute("aria-hidden");
@@ -143,10 +143,10 @@ export const Button = ({ globalState }: AddonProps) => {
         type="button"
       >
         <A11y />
-        <span className="ladle-addon-tooltip">{text}</span>
+        <span className="ginger-book-addon-tooltip">{text}</span>
         <label>Accessibility report</label>
         {violations.length ? (
-          <div className="ladle-badge">{violations.length}</div>
+          <div className="ginger-book-badge">{violations.length}</div>
         ) : null}
         <Modal
           isOpen={showReport}

@@ -33,11 +33,11 @@
     }
   },
   "include": [
-    "packages/*/.ladle/*",
+    "packages/*/.ginger-book/*",
     "packages/ginger-book/lib/app/window.d.ts",
     "packages/*/lib/**/*",
     "packages/*/src/**/*",
-    "e2e/*/.ladle/*",
+    "e2e/*/.ginger-book/*",
     "e2e/*/src/*",
     "e2e/*/tests/*",
     "type-tests/*"

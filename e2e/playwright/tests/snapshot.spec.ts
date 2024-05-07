@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 // we can't create tests asynchronously, thus using the sync-fetch lib
 import fetch from "sync-fetch";
 
-// URL where Ladle is served
+// URL where GingerBook is served
 const url = "http://127.0.0.1:61110";
 
 // set different viewport
@@ -13,7 +13,7 @@ const url = "http://127.0.0.1:61110";
 // run tests with browser open
 // test.use({ headless: false });
 
-// fetch Ladle's meta file
+// fetch GingerBook's meta file
 // https://gingersociety.org/ginger-book/docs/meta
 const stories = fetch(`${url}/meta.json`).json().stories;
 

@@ -51,18 +51,21 @@ function mdxPlugin(opts) {
     providerImportSource: "@ginger-society/ginger-book",
     jsx: true,
     remarkPlugins: [remarkGfm],
-    rehypePlugins: [[rehypeAddClasses, { "*": "ladle-markdown" }]],
+    rehypePlugins: [[rehypeAddClasses, { "*": "ginger-book-markdown" }]],
   });
 
   const markdownProcessor = createFormatAwareProcessors({
     format: "md",
     providerImportSource: "@ginger-society/ginger-book",
     remarkPlugins: [remarkGfm],
-    rehypePlugins: [rehypeRaw, [rehypeAddClasses, { "*": "ladle-markdown" }]],
+    rehypePlugins: [
+      rehypeRaw,
+      [rehypeAddClasses, { "*": "ginger-book-markdown" }],
+    ],
   });
 
   return {
-    name: "ladle:stories-mdx",
+    name: "ginger-book:stories-mdx",
     enforce: "pre",
     configResolved: ({ plugins }) => {
       reactPluginTransform = plugins.find(

@@ -35,7 +35,7 @@
   },
   "scripts": {
     "cli": "node ./lib/cli/cli.js",
-    "clean": "rimraf dist && rimraf .ladle && rimraf build && rimraf *.tsbuildinfo",
+    "clean": "rimraf dist && rimraf .ginger-book && rimraf build && rimraf *.tsbuildinfo",
     "serve": "node ./lib/cli/cli.js serve",
     "test": "cross-env IMPORT_ROOT=\"./\" vitest run",
     "test:watch": "cross-env IMPORT_ROOT=\"./\" vitest",

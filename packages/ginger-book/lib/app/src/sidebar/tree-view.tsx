@@ -252,8 +252,8 @@ const NavigationSection = ({
             role="treeitem"
             key={treeProps.id}
             className={cx({
-              "ladle-linkable": treeProps.isLinkable,
-              "ladle-active": treeProps.id === story,
+              "ginger-book-linkable": treeProps.isLinkable,
+              "ginger-book-active": treeProps.id === story,
             })}
             style={!treeProps.isLinkable ? { marginTop: "0.5em" } : {}}
           >

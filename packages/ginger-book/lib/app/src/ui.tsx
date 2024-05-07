@@ -15,7 +15,7 @@ export const Button = ({
 }) => {
   return (
     <button
-      className="ladle-button"
+      className="ginger-book-button"
       onClick={onClick}
       style={style}
       aria-label={rest["aria-label"]}
@@ -36,14 +36,14 @@ export const Link = ({
   style?: React.CSSProperties;
 }) => {
   return (
-    <a className="ladle-link" href={href} style={style}>
+    <a className="ginger-book-link" href={href} style={style}>
       {children}
     </a>
   );
 };
 
 export const Code = ({ children }: { children: React.ReactNode }) => {
-  return <code className="ladle-code">{children}</code>;
+  return <code className="ginger-book-code">{children}</code>;
 };
 
 export const Modal = ({
@@ -64,12 +64,12 @@ export const Modal = ({
     <DialogOverlay
       isOpen={isOpen}
       onDismiss={() => close()}
-      data-testid="ladle-dialog-overlay"
+      data-testid="ginger-book-dialog-overlay"
     >
       {/* @ts-ignore */}
       <DialogContent
         aria-label={label || "Modal"}
-        data-testid="ladle-dialog"
+        data-testid="ginger-book-dialog"
         style={{ maxWidth }}
       >
         <div
@@ -92,7 +92,7 @@ export const Modal = ({
             <Close />
           </Button>
         </div>
-        <div className="ladle-addon-modal-body">{children}</div>
+        <div className="ginger-book-addon-modal-body">{children}</div>
       </DialogContent>
     </DialogOverlay>
   );

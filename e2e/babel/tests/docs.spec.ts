@@ -5,7 +5,7 @@ test("mdx readme is rendered", async ({ page }) => {
   await expect(page.locator("h1")).toHaveText("test-page");
   // await expect(page.locator("img")).toHaveAttribute(
   //   "src",
-  //   "https://gingersociety.org/ginger-book/img/ladle-baseweb.png",
+  //   "https://gingersociety.org/ginger-book/img/ginger-book-baseweb.png",
   // );
   let i = 0;
   const h2s = ["Subtitle", "Install", "Usage", "Developing", "Ownership"];

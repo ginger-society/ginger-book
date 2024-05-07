@@ -449,22 +449,22 @@ export const Button = ({ globalState, dispatch }: AddonProps) => {
         aria-label={text}
         title={text}
         onClick={() => setOpen(true)}
-        className={open ? "ladle-active" : ""}
+        className={open ? "ginger-book-active" : ""}
         data-testid="addon-control"
         type="button"
       >
         <Controls />
-        <span className="ladle-addon-tooltip">{text}</span>
+        <span className="ginger-book-addon-tooltip">{text}</span>
         <label>Story Controls</label>
         {activeControls.length ? (
-          <div className="ladle-badge">{activeControls.length}</div>
+          <div className="ginger-book-badge">{activeControls.length}</div>
         ) : null}
         <Modal
           isOpen={open}
           close={() => setOpen(false)}
           label="Toggle different controls to update the story."
         >
-          <table className="ladle-controls-table">
+          <table className="ginger-book-controls-table">
             <tbody>
               {Object.keys(globalState.control)
                 .sort()

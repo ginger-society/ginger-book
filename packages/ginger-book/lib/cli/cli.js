@@ -9,7 +9,7 @@ import preview from "./preview.js";
  */
 const strToInt = (n) => parseInt(n, 10);
 
-const program = new Command("ladle");
+const program = new Command("ginger-book");
 program.showHelpAfterError().showSuggestionAfterError();
 
 program
@@ -20,7 +20,10 @@ program
   .option("-p, --port [number]", "port to serve the application", strToInt)
   .option("--stories [string]", "glob to find stories")
   .option("--theme [string]", "theme light, dark or auto")
-  .option("--config [string]", "folder where config is located, default .ladle")
+  .option(
+    "--config [string]",
+    "folder where config is located, default .ginger-book",
+  )
   .option("--viteConfig [string]", "file with Vite configuration")
   .option("--base [string]", "base URL path for build output")
   .option("--mode [string]", "Vite mode")
@@ -33,7 +36,10 @@ program
   .option("-o, --outDir <path>", "output directory")
   .option("--stories [string]", "glob to find stories")
   .option("--theme [string]", "theme light, dark or auto")
-  .option("--config [string]", "folder where config is located, default .ladle")
+  .option(
+    "--config [string]",
+    "folder where config is located, default .ginger-book",
+  )
   .option("--viteConfig [string]", "file with Vite configuration")
   .option("--base [string]", "base URL path for build output")
   .option("--mode [string]", "Vite mode")
@@ -51,7 +57,10 @@ program
   .option("-o, --outDir <path>", "output directory")
   .option("-h, --host [string]", "host to serve the application")
   .option("-p, --port [number]", "port to serve the application", strToInt)
-  .option("--config [string]", "folder where config is located, default .ladle")
+  .option(
+    "--config [string]",
+    "folder where config is located, default .ginger-book",
+  )
   .option("--viteConfig [string]", "file with Vite configuration")
   .option("--base [string]", "base URL path for build output")
   .option("--mode [string]", "Vite mode")

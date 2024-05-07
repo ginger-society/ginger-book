@@ -65,7 +65,7 @@ export default {
       enabled: true,
       defaultState: [],
     },
-    ladle: {
+    gingerBook: {
       enabled: true,
     },
     width: {

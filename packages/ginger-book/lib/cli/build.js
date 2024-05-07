@@ -18,7 +18,7 @@ import getAppId from "./get-app-id.js";
 const build = async (params = {}) => {
   const startTime = performance.now();
   debug("Starting build command");
-  process.env["VITE_LADLE_APP_ID"] = getAppId();
+  process.env["VITE_GINGER_BOOK_APP_ID"] = getAppId();
   const { configFolder, config } = await applyCLIConfig(params);
   await viteProd(config, configFolder);
   const entryData = await getEntryData(
@@ -38,9 +38,9 @@ const build = async (params = {}) => {
   const stopTime = performance.now();
   const inSeconds = (stopTime - startTime) / 1000;
   console.log(
-    `⏱️  Ladle finished the production build in ${Number(inSeconds).toFixed(
-      0,
-    )}s producing ${folderSize} MiB of assets.`,
+    `⏱️  GingerBook finished the production build in ${Number(
+      inSeconds,
+    ).toFixed(0)}s producing ${folderSize} MiB of assets.`,
   );
   console.log(config.i18n.buildTooltip);
   return true;

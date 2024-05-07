@@ -6,7 +6,7 @@ test("action passed through argTypes", async ({ page }) => {
   await userButton.click();
   const button = page.locator('[data-testid="addon-action"]');
   await button.click();
-  await expect(page.locator(".ladle-addon-modal-body")).toContainText(
+  await expect(page.locator(".ginger-book-addon-modal-body")).toContainText(
     "onClick",
   );
 });
@@ -17,5 +17,7 @@ test("dynamic action", async ({ page }) => {
   await userButton.click();
   const button = page.locator('[data-testid="addon-action"]');
   await button.click();
-  await expect(page.locator(".ladle-addon-modal-body")).toContainText("second");
+  await expect(page.locator(".ginger-book-addon-modal-body")).toContainText(
+    "second",
+  );
 });
