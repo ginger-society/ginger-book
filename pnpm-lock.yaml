@@ -210,7 +210,7 @@ importers:
   e2e/msw:
     dependencies:
       '@ginger-society/ginger-book':
-        specifier: ^4.0.9
+        specifier: workspace:*
         version: link:../../packages/ginger-book
       '@ginger-society/playwright-config':
         specifier: workspace:*
