@@ -1,5 +1,5 @@
-import type { Story } from "@ginger-book/react";
-import { useLink } from "@ginger-book/react";
+import type { Story } from "@ginger-society/ginger-book";
+import { useLink } from "@ginger-society/ginger-book";
 import Context from "./context";
 
 export const World: Story = () => {

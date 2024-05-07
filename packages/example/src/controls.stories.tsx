@@ -1,5 +1,5 @@
-import type { Story } from "@ginger-book/react";
-import { action, linkTo } from "@ginger-book/react";
+import type { Story } from "@ginger-society/ginger-book";
+import { action, linkTo } from "@ginger-society/ginger-book";
 
 export const Controls: Story<{
   label: string;

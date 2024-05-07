@@ -10,7 +10,7 @@
     "test": "echo 'no test'"
   },
   "dependencies": {
-    "@ginger-book/react": "workspace:*",
+    "@ginger-society/ginger-book": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

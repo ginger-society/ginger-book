@@ -1,4 +1,4 @@
-import type { Story } from "../packages/ladle/lib/app/exports";
+import type { Story } from "../packages/ginger-book/lib/app/exports";
 
 type FooProps = {
   foo: string;

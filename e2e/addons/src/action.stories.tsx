@@ -1,5 +1,5 @@
-import type { Story } from "@ginger-book/react";
-import { action } from "@ginger-book/react";
+import type { Story } from "@ginger-society/ginger-book";
+import { action } from "@ginger-society/ginger-book";
 
 export const Basic: Story<{
   onClick: () => void;

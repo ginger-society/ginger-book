@@ -1,4 +1,4 @@
-import type { Story } from "@ginger-book/react";
+import type { Story } from "@ginger-society/ginger-book";
 import { useEffect, useState } from "react";
 
 export const QueryParameters: Story = () => {

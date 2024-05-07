@@ -1,4 +1,4 @@
-import type { Story } from "@ginger-book/react";
+import type { Story } from "@ginger-society/ginger-book";
 
 declare const __filename_root: string;
 declare const __dirname_root: string;

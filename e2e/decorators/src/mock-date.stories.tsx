@@ -1,4 +1,4 @@
-import type { Story } from "@ginger-book/react";
+import type { Story } from "@ginger-society/ginger-book";
 
 export const Active: Story = () => {
   const date = new Date();

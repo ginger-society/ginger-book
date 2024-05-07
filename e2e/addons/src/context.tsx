@@ -1,5 +1,5 @@
 // @ts-ignore
-import { useLadleContext } from "@ginger-book/react";
+import { useLadleContext } from "@ginger-society/ginger-book";
 
 function Context() {
   const { globalState } = useLadleContext();

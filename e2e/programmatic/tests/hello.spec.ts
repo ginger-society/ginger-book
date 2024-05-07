@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
-// @ts-ignore Cannot find module '@ginger-book/react/meta' or its corresponding type declarations.
-import getMeta from "@ginger-book/react/meta";
+// @ts-ignore Cannot find module '@ginger-society/ginger-book/meta' or its corresponding type declarations.
+import getMeta from "@ginger-society/ginger-book/meta";
 
 test("provider passes context and renders wrapper", async ({ page }) => {
   await page.goto("/");

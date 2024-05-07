@@ -1,4 +1,4 @@
-import type { Story } from "@ginger-book/react";
+import type { Story } from "@ginger-society/ginger-book";
 
 export const First: Story = () => {
   // not rendering a text since fonts render differently in different operation systems

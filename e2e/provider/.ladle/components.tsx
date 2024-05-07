@@ -1,4 +1,4 @@
-import type { GlobalProvider, SourceHeader } from "@ginger-book/react";
+import type { GlobalProvider, SourceHeader } from "@ginger-society/ginger-book";
 import { createContext } from "react";
 
 export const MyContext = createContext("my-context");

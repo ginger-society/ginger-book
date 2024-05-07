@@ -1,4 +1,4 @@
-import build from "@ginger-book/react/build";
+import build from "@ginger-society/ginger-book/build";
 
 build({
   port: 61105,

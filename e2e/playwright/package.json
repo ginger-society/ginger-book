@@ -15,8 +15,8 @@
     "test:update": "cross-env TYPE=update pnpm exec playwright test -u"
   },
   "dependencies": {
-    "@ginger-book/playwright-config": "workspace:*",
-    "@ginger-book/react": "workspace:*",
+    "@ginger-society/playwright-config": "workspace:*",
+    "@ginger-society/ginger-book": "workspace:*",
     "@playwright/test": "^1.42.1",
     "@types/sync-fetch": "^0.4.3",
     "cross-env": "^7.0.3",

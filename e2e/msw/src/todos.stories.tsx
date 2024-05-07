@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import type { Story } from "@ginger-book/react";
-import { msw } from "@ginger-book/react";
+import type { Story } from "@ginger-society/ginger-book";
+import { msw } from "@ginger-society/ginger-book";
 import { fetchData } from "./utils";
 
 // @ts-ignore

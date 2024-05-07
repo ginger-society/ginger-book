@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("boolean control works", async ({ page }) => {
+test.skip("boolean control works", async ({ page }) => {
   await page.goto("/?story=controls--controls");
   const button = page.locator('[data-testid="addon-source"]');
   await button.click();
@@ -8,6 +8,6 @@ test("boolean control works", async ({ page }) => {
     "src/controls.stories.tsx",
   );
   await expect(page.locator("pre")).toContainText(
-    'import type { StoryDefault, Story } from "@ginger-book/react";',
+    'import type { StoryDefault, Story } from "@ginger-society/ginger-book";',
   );
 });

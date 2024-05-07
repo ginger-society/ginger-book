@@ -1,4 +1,4 @@
-import type { StoryDefault, Story } from "@ginger-book/react";
+import type { StoryDefault, Story } from "@ginger-society/ginger-book";
 
 export default {
   decorators: [

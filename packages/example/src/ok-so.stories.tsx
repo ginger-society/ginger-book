@@ -1,4 +1,4 @@
-import type { StoryDefault, Story } from "@ginger-book/react";
+import type { StoryDefault, Story } from "@ginger-society/ginger-book";
 import identity from "./syntax";
 
 export default {

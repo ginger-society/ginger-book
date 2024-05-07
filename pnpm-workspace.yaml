@@ -1,6 +1,6 @@
 packages:
   - 'packages/example'
-  - 'packages/ladle'
+  - 'packages/ginger-book'
   - 'e2e/addons'
   - 'e2e/babel'
   - 'e2e/commonjs'

@@ -1,4 +1,4 @@
-import type { Story } from "@ginger-book/react";
+import type { Story } from "@ginger-society/ginger-book";
 import "./styles.css";
 
 export const Iframed: Story = () => <h1>Iframed</h1>;

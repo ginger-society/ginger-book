@@ -1,3 +1,3 @@
-import getMeta from "@ginger-book/react/meta";
+import getMeta from "@ginger-society/ginger-book/meta";
 
 getMeta();

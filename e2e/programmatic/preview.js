@@ -1,4 +1,4 @@
-import preview from "@ginger-book/react/preview";
+import preview from "@ginger-society/ginger-book/preview";
 
 preview({
   previewPort: 61105,

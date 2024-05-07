@@ -1,4 +1,4 @@
-import serve from "@ginger-book/react/serve";
+import serve from "@ginger-society/ginger-book/serve";
 
 serve({
   port: 61105,

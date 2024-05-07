@@ -3,8 +3,8 @@ import {
   ActionType,
   ThemeState,
   action,
-} from "@ginger-book/react";
-import type { Story } from "@ginger-book/react";
+} from "@ginger-society/ginger-book";
+import type { Story } from "@ginger-society/ginger-book";
 
 const empty = "";
 export const Responsive: Story = () => {
