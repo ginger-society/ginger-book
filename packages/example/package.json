@@ -4,8 +4,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "serve": "ladle serve",
-    "build": "ladle build",
+    "serve": "ginger-book serve",
+    "build": "ginger-book build",
     "lint": "echo 'no lint'",
     "test": "echo 'no test'"
   },
