@@ -13,8 +13,8 @@ const version = `0.0.0-next-${shortHash}`;
 console.log(`Publishing @ginger-society/ginger-book ${version}`);
 
 const pkgJson = JSON.parse(fs.readFileSync("./package.json"));
-const oldVersion = pkgJson.version;
-pkgJson.version = version;
+// const oldVersion = pkgJson.version;
+// pkgJson.version = version;
 preparePackageJsonForPublish(pkgJson);
 fs.writeFileSync("./package.json", JSON.stringify(pkgJson, null, 2));
 
