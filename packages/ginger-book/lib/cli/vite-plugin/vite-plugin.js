@@ -116,7 +116,9 @@ function ladlePlugin(config, configFolder, mode) {
         } catch (/** @type {any} */ e) {
           printError("\nStory discovering failed:\n");
           printError(e);
-          printError("\nMore info: https://ladle.dev/docs/stories#limitations");
+          printError(
+            "\nMore info: https://gingersociety.org/ginger-book/docs/stories#limitations",
+          );
           if (mode === "production") {
             process.exit(1);
           }

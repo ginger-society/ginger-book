@@ -14,7 +14,7 @@ const url = "http://127.0.0.1:61110";
 // test.use({ headless: false });
 
 // fetch Ladle's meta file
-// https://ladle.dev/docs/meta
+// https://gingersociety.org/ginger-book/docs/meta
 const stories = fetch(`${url}/meta.json`).json().stories;
 
 // iterate through stories

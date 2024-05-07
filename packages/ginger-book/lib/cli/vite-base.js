@@ -40,7 +40,7 @@ const getBaseViteConfig = async (ladleConfig, configFolder, viteConfig) => {
   Object.keys(ladleConfig).forEach((configKey) => {
     if (_removedLadleConfigOptions.includes(configKey)) {
       console.error(
-        `ERROR: ${configKey} was removed from the Ladle config in v1. Move it to vite.config.js. https://ladle.dev/docs/config`,
+        `ERROR: ${configKey} was removed from the Ladle config in v1. Move it to vite.config.js. https://gingersociety.org/ginger-book/docs/config`,
       );
       oldKeyUsed = true;
     }

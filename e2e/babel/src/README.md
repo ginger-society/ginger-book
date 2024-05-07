@@ -2,7 +2,7 @@
 
 React component
 
-<img alt="Screenshot" src="https://ladle.dev/img/ladle-baseweb.png" width="400px" />
+<img alt="Screenshot" src="https://gingersociety.org/ginger-book/img/ladle-baseweb.png" width="400px" />
 
 ---
 

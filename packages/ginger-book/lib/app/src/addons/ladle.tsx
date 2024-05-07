@@ -100,8 +100,10 @@ export const Button = ({ globalState }: AddonProps) => {
           <p>
             Ladle is a modern and fast playground for React components powered
             by Vite. For more information visit{" "}
-            <a href="https://gingersociety.org/ginger-book/">ladle.dev</a> or
-            our <a href="https://discord.gg/H6FSHjyW7e">discord</a>.
+            <a href="https://gingersociety.org/ginger-book/">
+              gingersociety.org/ginger-book
+            </a>{" "}
+            or our <a href="https://discord.gg/H6FSHjyW7e">discord</a>.
           </p>
         </Modal>
       </button>

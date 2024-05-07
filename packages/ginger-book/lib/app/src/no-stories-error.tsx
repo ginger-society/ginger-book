@@ -9,7 +9,7 @@ const NoStoriesError = ({ error }: { error: string }) => {
       <pre>{error}</pre>
       <p>Check the terminal for more info.</p>
       <p>
-        <Link href="https://ladle.dev/docs/stories#limitations">
+        <Link href="https://gingersociety.org/ginger-book/docs/stories#limitations">
           More information.
         </Link>
       </p>

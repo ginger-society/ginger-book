@@ -53,7 +53,7 @@ const vitePreview = async (config, configFolder) => {
       config.previewPort
     }${config.base ? config.base : ""}`;
     console.log(
-      boxen(`🥄 Ladle.dev previewed at ${serverUrl}`, {
+      boxen(`🥄 gingersociety.org/ginger-book previewed at ${serverUrl}`, {
         padding: 1,
         margin: 1,
         borderStyle: "round",

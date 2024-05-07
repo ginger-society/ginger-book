@@ -110,7 +110,7 @@ const bundler = async (config, configFolder) => {
 
     const listenCallback = async () => {
       console.log(
-        boxen(`🥄 Ladle.dev served at ${serverUrl}`, {
+        boxen(`🥄 gingersociety.org/ginger-book served at ${serverUrl}`, {
           padding: 1,
           margin: 1,
           borderStyle: "round",
