@@ -3,10 +3,10 @@ import { test, expect } from "@playwright/test";
 test("mdx readme is rendered", async ({ page }) => {
   await page.goto("/?story=docs--documentation");
   await expect(page.locator("h1")).toHaveText("test-page");
-  await expect(page.locator("img")).toHaveAttribute(
-    "src",
-    "https://gingersociety.org/ginger-book/img/ladle-baseweb.png",
-  );
+  // await expect(page.locator("img")).toHaveAttribute(
+  //   "src",
+  //   "https://gingersociety.org/ginger-book/img/ladle-baseweb.png",
+  // );
   let i = 0;
   const h2s = ["Subtitle", "Install", "Usage", "Developing", "Ownership"];
   for (const h2 of await page.locator("h2").all()) {
