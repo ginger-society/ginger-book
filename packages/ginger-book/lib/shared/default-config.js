@@ -30,7 +30,8 @@ export default {
     return;
   },
   i18n: {
-    buildTooltip: '💡 Tip: Run "ladle preview" to check that the build works!',
+    buildTooltip:
+      '💡 Tip: Run "ginger-book preview" to check that the build works!',
   },
   // enable/disable addons and their default state
   addons: {

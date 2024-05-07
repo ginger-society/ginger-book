@@ -4,9 +4,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "serve": "ladle serve -p 61103",
-    "serve-prod": "ladle preview -p 61103",
-    "build": "ladle build",
+    "serve": "ginger-book serve -p 61103",
+    "serve-prod": "ginger-book preview -p 61103",
+    "build": "ginger-book build",
     "lint": "echo 'no lint'",
     "test-dev": "cross-env TYPE=dev pnpm exec playwright test",
     "test-prod": "cross-env TYPE=prod pnpm exec playwright test",
