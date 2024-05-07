@@ -31,7 +31,7 @@
     "typings-for-build"
   ],
   "bin": {
-    "ladle": "./lib/cli/cli.js"
+    "ginger-book": "./lib/cli/cli.js"
   },
   "scripts": {
     "cli": "node ./lib/cli/cli.js",
