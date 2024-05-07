@@ -45,7 +45,10 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create Release Pull Request or Publish to npm
-        run: pnpm publish
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_DEPLOY_KEY }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
