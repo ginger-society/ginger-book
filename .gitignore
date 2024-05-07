@@ -8,6 +8,6 @@ yarn-error.log
 cjs
 .turbo
 .pnpm-store
-packages/ladle/typings-for-build
+packages/ginger-book/typings-for-build
 e2e/*/test-results
 

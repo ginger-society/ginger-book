@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test.skip("boolean control works", async ({ page }) => {
+test("boolean control works", async ({ page }) => {
   await page.goto("/?story=controls--controls");
   const button = page.locator('[data-testid="addon-source"]');
   await button.click();
