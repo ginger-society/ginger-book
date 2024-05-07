@@ -1,12 +1,12 @@
 import fs from "fs";
 
 const pkgJson = JSON.parse(
-  fs.readFileSync("./packages/ladle/backup-package.json"),
+  fs.readFileSync("./packages/ginger-book/backup-package.json"),
 );
 // write updates to package.json
 fs.writeFileSync(
-  "./packages/ladle/package.json",
+  "./packages/ginger-book/package.json",
   JSON.stringify(pkgJson, null, 2),
 );
 // remove backup file
-fs.rmSync("./packages/ladle/backup-package.json");
+fs.rmSync("./packages/ginger-book/backup-package.json");
