@@ -14,7 +14,7 @@ preparePackageJsonForPublish(pkgJson);
 fs.writeFileSync("./package.json", JSON.stringify(pkgJson, null, 2));
 
 try {
-  execSync("npm publish --tag next");
+  execSync("npm publish --tag latest");
 } catch (e) {
   console.log(e);
   console.log("Publish failed, reverting package.json");
