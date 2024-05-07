@@ -18,7 +18,7 @@ test("meta.json is correctly using defaults and overrides", async ({
     expect.objectContaining({
       about: {
         github: "https://github.com/ginger-society/ginger-book",
-        homepage: "https://www.ladle.dev",
+        homepage: "https://gingersociety.org/ginger-book",
         version: 1,
       },
       stories: {

@@ -9,7 +9,7 @@ const NoStories = () => (
     </p>
     <p>
       It can be changed through the{" "}
-      <Link href="https://www.ladle.dev/docs/config#story-filenames">
+      <Link href="https://gingersociety.org/ginger-book/docs/config#story-filenames">
         configuration file
       </Link>{" "}
       or CLI flag <Code>--stories=your-glob</Code>.
@@ -18,7 +18,7 @@ const NoStories = () => (
       <Link href="https://github.com/ginger-society/ginger-book">GitHub</Link>
     </p>
     <p>
-      <Link href="https://www.ladle.dev">Docs</Link>
+      <Link href="https://gingersociety.org/ginger-book">Docs</Link>
     </p>
   </div>
 );

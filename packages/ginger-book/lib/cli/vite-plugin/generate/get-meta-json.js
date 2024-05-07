@@ -22,7 +22,7 @@ export const getMetaJson = (entryData) => {
   });
   const result = {
     about: {
-      homepage: "https://www.ladle.dev",
+      homepage: "https://gingersociety.org/ginger-book",
       github: "https://github.com/ginger-society/ginger-book",
       version: 1,
     },

@@ -13,7 +13,7 @@ test("getMeta export returns JS object identical to `meta.json` ", async () => {
   expect(await meta).toEqual(
     expect.objectContaining({
       about: {
-        homepage: "https://www.ladle.dev",
+        homepage: "https://gingersociety.org/ginger-book",
         github: "https://github.com/ginger-society/ginger-book",
         version: 1,
       },
@@ -46,7 +46,7 @@ test("meta.json has a single story ok", async ({ request }) => {
   expect(await meta.json()).toEqual(
     expect.objectContaining({
       about: {
-        homepage: "https://www.ladle.dev",
+        homepage: "https://gingersociety.org/ginger-book",
         github: "https://github.com/ginger-society/ginger-book",
         version: 1,
       },

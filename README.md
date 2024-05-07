@@ -2,46 +2,40 @@
 </p>
 <br/>
 
-Ladle is an environment to develop, test, and share your React components faster.
-
-- [Documentation](https://www.ladle.dev)
-- [Demo](https://baseweb.design/ladle)
-- [Twitter](https://twitter.com/ladlejs)
-- [StackBlitz](https://ladle.dev/new)
-- [Discord](https://discord.gg/H6FSHjyW7e)
+ginger-book is an environment to develop, test, and share your React components faster.
 
 ## Quick start
 
 ```bash
-mkdir my-ladle
-cd my-ladle
+mkdir my-ginger-book
+cd my-ginger-book
 pnpm init
 pnpm add @ginger-society/ginger-book react react-dom
 mkdir src
 echo "export const World = () => <p>Hey</p>;" > src/hello.stories.tsx
-pnpm ladle serve
+pnpm ginger-book serve
 ```
 
 with yarn
 
 ```bash
-mkdir my-ladle
-cd my-ladle
+mkdir my-ginger-book
+cd my-ginger-book
 yarn init --yes
 yarn add @ginger-society/ginger-book react react-dom
 mkdir src
 echo "export const World = () => <p>Hey</p>;" > src/hello.stories.tsx
-yarn ladle serve
+yarn ginger-book serve
 ```
 
 with npm
 
 ```bash
-mkdir my-ladle
-cd my-ladle
+mkdir my-ginger-book
+cd my-ginger-book
 npm init --yes
 npm install @ginger-society/ginger-book react react-dom
 mkdir src
 echo "export const World = () => <p>Hey</p>;" > src/hello.stories.tsx
-npx ladle serve
+npx ginger-book serve
 ```

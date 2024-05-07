@@ -20,7 +20,7 @@ const NoStoriesError = ({ error }: { error: string }) => {
         <Link href="https://github.com/ginger-society/ginger-book">Github</Link>
       </p>
       <p>
-        <Link href="https://www.ladle.dev">Docs</Link>
+        <Link href="https://gingersociety.org/ginger-book">Docs</Link>
       </p>
     </div>
   );

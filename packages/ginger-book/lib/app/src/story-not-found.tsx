@@ -14,7 +14,7 @@ const StoryNotFound = ({ activeStory }: { activeStory: string }) => (
       <Link href="https://github.com/ginger-society/ginger-book">GitHub</Link>
     </p>
     <p>
-      <Link href="https://www.ladle.dev">Docs</Link>
+      <Link href="https://gingersociety.org/ginger-book">Docs</Link>
     </p>
   </div>
 );
