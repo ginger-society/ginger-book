@@ -7,14 +7,9 @@ import {
   revertPackageJson,
 } from "./scripts/package-types-helpers.js";
 
-const shortHash = execSync("git rev-parse --short HEAD").toString().trim();
-const version = `0.0.0-next-${shortHash}`;
-
-console.log(`Publishing @ginger-society/ginger-book ${version}`);
-
 const pkgJson = JSON.parse(fs.readFileSync("./package.json"));
-// const oldVersion = pkgJson.version;
-// pkgJson.version = version;
+console.log(`Publishing @ginger-society/ginger-book ${pkgJson.version}`);
+
 preparePackageJsonForPublish(pkgJson);
 fs.writeFileSync("./package.json", JSON.stringify(pkgJson, null, 2));
 
@@ -25,6 +20,6 @@ try {
   console.log("Publish failed, reverting package.json");
 }
 
-pkgJson.version = oldVersion;
+// pkgJson.version = oldVersion;
 revertPackageJson(pkgJson);
 fs.writeFileSync("./package.json", JSON.stringify(pkgJson, null, 2));
