@@ -2,18 +2,15 @@
 
 chore:
 
+- [7c180ef05e](https://github.com/ginger-society/ginger-ui7c180ef05ef864a3c3d62b01f7fae598a1c853d7) (Ginger Society Admin) chore: version bump to 4.2.0
 - [4ff24550bf](https://github.com/ginger-society/ginger-ui4ff24550bf34a85f29e8cc7fbb11f92111e7d8aa) (Ginger Society Admin) chore: added changelog to git
 
 ## 4.1.0 - 2024-09-09
 
-test:
+feat:
 
-- [18158b81df](https://github.com/ginger-society/ginger-ui18158b81df5aa30d61367be397e43fa6f6743dc5) (Ginger Society Admin) test: version change
-
-removed
-
-- [d82f428490](https://github.com/ginger-society/ginger-uid82f4284901978ab40e801497d7b07964e86129b) (Ginger Society Admin) removed private from package.json
-- [8bbdf05b8e](https://github.com/ginger-society/ginger-ui8bbdf05b8ebb9d9793e14ca84af69bc2e76fd201) (Ginger Society Admin) removed website package
+- [f6f9dad9d5](https://github.com/ginger-society/ginger-uif6f9dad9d5f116f45ce336ba59bb562d5a6857fa) (Ginger Society Admin) feat: updated configs and pipeline
+- [f9f0be3106](https://github.com/ginger-society/ginger-uif9f0be3106a237676e6b21230f388b8dde690d58) (Ginger Society Admin) feat: added readme in ginger-book package
 
 chore:
 
@@ -40,11 +37,6 @@ chore:
 - [d00f39a97f](https://github.com/ginger-society/ginger-uid00f39a97f3f215897a915471a5e6824736548c8) (Ginger Society Admin) chore: renamed package
 - [7298bbf1ba](https://github.com/ginger-society/ginger-ui7298bbf1bad067723863134a916e044630428391) (Ginger Society Admin) chore: first commit
 
-feat:
-
-- [f6f9dad9d5](https://github.com/ginger-society/ginger-uif6f9dad9d5f116f45ce336ba59bb562d5a6857fa) (Ginger Society Admin) feat: updated configs and pipeline
-- [f9f0be3106](https://github.com/ginger-society/ginger-uif9f0be3106a237676e6b21230f388b8dde690d58) (Ginger Society Admin) feat: added readme in ginger-book package
-
 fix:
 
 - [8f46b63813](https://github.com/ginger-society/ginger-ui8f46b638133425d9bdb4bf1f2fd8c213d554f6c9) (Ginger Society Admin) fix: ci pipeline
@@ -59,3 +51,12 @@ fix:
 - [1499263467](https://github.com/ginger-society/ginger-ui14992634678f556d6ef7e33b85083bc60a88229b) (Ginger Society Admin) fix: githb workflow fixes
 - [be94fd5d67](https://github.com/ginger-society/ginger-uibe94fd5d6728740fd90154d6bf09b6990a557fbd) (Ginger Society Admin) fix: github workflow fixes
 - [e7c2ebe1a6](https://github.com/ginger-society/ginger-uie7c2ebe1a607f017d71d2207fee045ea6f8be48d) (Ginger Society Admin) fix: renamed package in tests
+
+test:
+
+- [18158b81df](https://github.com/ginger-society/ginger-ui18158b81df5aa30d61367be397e43fa6f6743dc5) (Ginger Society Admin) test: version change
+
+removed
+
+- [d82f428490](https://github.com/ginger-society/ginger-uid82f4284901978ab40e801497d7b07964e86129b) (Ginger Society Admin) removed private from package.json
+- [8bbdf05b8e](https://github.com/ginger-society/ginger-ui8bbdf05b8ebb9d9793e14ca84af69bc2e76fd201) (Ginger Society Admin) removed website package

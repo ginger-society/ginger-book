@@ -1,12 +1,17 @@
 [version]
 channel = "Final"
 major = 4
-minor = 2
+minor = 3
 patch = 0
 revision = 0
 
 [[references]]
 file_name = "packages/ginger-book/package.json"
+output_type = "String"
+variable = "version"
+
+[[references]]
+file_name = "package.json"
 output_type = "String"
 variable = "version"
 
