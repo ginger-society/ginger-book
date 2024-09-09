@@ -44,7 +44,7 @@
     "test": "turbo run test --concurrency=1 -- -u",
     "typecheck": "tsc"
   },
-  "version": "4.3.0",
+  "version": "4.4.0",
   "workspaces": [
     "packages/example",
     "packages/ginger-book",
