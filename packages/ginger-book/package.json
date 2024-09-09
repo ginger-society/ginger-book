@@ -1,45 +1,7 @@
 {
-  "name": "@ginger-society/ginger-book",
-  "version": "4.0.10",
-  "repository": "git@github.com:ginger-society/ginger-book.git",
   "author": "Ginger Society <admin@gingersociety.org>",
-  "license": "MIT",
-  "type": "module",
-  "types": "./typings-for-build/app/exports.d.ts",
-  "exports": {
-    ".": {
-      "types": {
-        "import": "./typings-for-build/app/exports.d.ts",
-        "require": "./typings-for-build/app/exports.d.cts"
-      },
-      "default": "./lib/app/exports.ts"
-    },
-    "./serve": "./api/serve.js",
-    "./preview": "./api/preview.js",
-    "./build": "./api/build.js",
-    "./meta": "./api/meta.js",
-    "./msw-node": "./api/msw-node.js"
-  },
-  "packageManager": "pnpm@8.7.1",
-  "publishConfig": {
-    "access": "public",
-    "provenance": true
-  },
-  "files": [
-    "lib",
-    "api",
-    "typings-for-build"
-  ],
   "bin": {
     "ginger-book": "./lib/cli/cli.js"
-  },
-  "scripts": {
-    "cli": "node ./lib/cli/cli.js",
-    "clean": "rimraf dist && rimraf .ginger-book && rimraf build && rimraf *.tsbuildinfo",
-    "serve": "node ./lib/cli/cli.js serve",
-    "test": "cross-env IMPORT_ROOT=\"./\" vitest run",
-    "test:watch": "cross-env IMPORT_ROOT=\"./\" vitest",
-    "types": "tsc --project tsconfig.typesoutput.json && cp ./typings-for-build/app/exports.d.ts ./typings-for-build/app/exports.d.cts && cp -r -n ./lib/app ./typings-for-build/ || true && ./scripts/update-index-path.js"
   },
   "dependencies": {
     "@babel/code-frame": "^7.23.5",
@@ -82,10 +44,6 @@
     "vite": "^5.1.6",
     "vite-tsconfig-paths": "^4.3.2"
   },
-  "peerDependencies": {
-    "react": ">=18.0.0",
-    "react-dom": ">=18.0.0"
-  },
   "devDependencies": {
     "@babel/cli": "^7.23.9",
     "@types/babel__code-frame": "^7.0.6",
@@ -107,5 +65,47 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "exports": {
+    ".": {
+      "default": "./lib/app/exports.ts",
+      "types": {
+        "import": "./typings-for-build/app/exports.d.ts",
+        "require": "./typings-for-build/app/exports.d.cts"
+      }
+    },
+    "./build": "./api/build.js",
+    "./meta": "./api/meta.js",
+    "./msw-node": "./api/msw-node.js",
+    "./preview": "./api/preview.js",
+    "./serve": "./api/serve.js"
+  },
+  "files": [
+    "lib",
+    "api",
+    "typings-for-build"
+  ],
+  "license": "MIT",
+  "name": "@ginger-society/ginger-book",
+  "packageManager": "pnpm@8.7.1",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": "git@github.com:ginger-society/ginger-book.git",
+  "scripts": {
+    "clean": "rimraf dist && rimraf .ginger-book && rimraf build && rimraf *.tsbuildinfo",
+    "cli": "node ./lib/cli/cli.js",
+    "serve": "node ./lib/cli/cli.js serve",
+    "test": "cross-env IMPORT_ROOT=\"./\" vitest run",
+    "test:watch": "cross-env IMPORT_ROOT=\"./\" vitest",
+    "types": "tsc --project tsconfig.typesoutput.json && cp ./typings-for-build/app/exports.d.ts ./typings-for-build/app/exports.d.cts && cp -r -n ./lib/app ./typings-for-build/ || true && ./scripts/update-index-path.js"
+  },
+  "type": "module",
+  "types": "./typings-for-build/app/exports.d.ts",
+  "version": "4.1.0"
 }

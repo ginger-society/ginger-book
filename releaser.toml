@@ -1,14 +1,14 @@
+[version]
+channel = "Final"
+major = 4
+minor = 1
+patch = 0
+revision = 0
+
 [[references]]
 file_name = "packages/ginger-book/package.json"
 output_type = "String"
 variable = "version"
-
-[version]
-channel = "Final"
-major = 4
-minor = 0
-patch = 10
-revision = 0
 
 [settings]
 git_url_prefix = "https://github.com/ginger-society/ginger-ui"
