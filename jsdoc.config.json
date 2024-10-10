@@ -16,10 +16,10 @@
     "recurse": true,
     "readme": "README.md",
     "theme_opts": {
-      "homepageTitle": "ginger-book docs",
+      "homepageTitle": "Clean JSDoc Theme",
       "includeFilesListInHomepage": true,
       "default_theme": "dark",
-      "title": "ginger-book",
+      "title": "IAM",
       "resizeable": {
         "navbar": {
           "min": "300",

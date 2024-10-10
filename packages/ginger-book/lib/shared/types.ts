@@ -1,9 +1,4 @@
-/* eslint-disable prettier/prettier */
 import type { UserConfig as ViteUserConfig } from "vite";
-
-/**
- * Type Definitions
- */
 
 type RecursivePartial<T> = {
   [P in keyof T]?: RecursivePartial<T[P]>;
@@ -66,7 +61,7 @@ export enum ActionType {
   UpdateTheme = "update-theme",
   UpdateWidth = "update-width",
   UpdateControl = "update-control",
-  UpdateControlInitialized = "update-control-initialized",
+  UpdateControlIntialized = "update-control-initialized",
   UpdateHotkeys = "update-hotkeys",
 }
 
@@ -109,7 +104,7 @@ export type GlobalAction =
       value: boolean;
     }
   | {
-      type: ActionType.UpdateControlInitialized;
+      type: ActionType.UpdateControlIntialized;
       value: boolean;
     }
   | {
@@ -258,7 +253,6 @@ export type StoryEntry = {
   locStart: number;
   locEnd: number;
 };
-
 export type ParsedStoriesResult = {
   entry: string;
   stories: StoryEntry[];
@@ -283,87 +277,3 @@ export type GetUserViteConfig = {
 export type EntryData = {
   [key: string]: ParsedStoriesResult;
 };
-
-/**
- * Config Export
- */
-const config: Config = {
-  stories: "src/**/*.stories.{js,jsx,ts,tsx,mdx}",
-  defaultStory: "",
-  storyOrder: (stories) => stories,
-  viteConfig: undefined,
-  appendToHead: "",
-  noWatch: false,
-  port: 61000,
-  previewPort: 8080,
-  outDir: "build",
-  base: undefined,
-  hotkeys: {
-    search: ["/", "meta+p"],
-    nextStory: ["alt+arrowright"],
-    previousStory: ["alt+arrowleft"],
-    nextComponent: ["alt+arrowdown"],
-    previousComponent: ["alt+arrowup"],
-    control: ["c"],
-    darkMode: ["d"],
-    fullscreen: ["f"],
-    width: ["w"],
-    rtl: ["r"],
-    source: ["s"],
-    a11y: ["a"],
-  },
-  onDevServerStart: () => {
-    return;
-  },
-  i18n: {
-    buildTooltip:
-      '💡 Tip: Run "ginger-book preview" to check that the build works!',
-  },
-  addons: {
-    control: {
-      enabled: true,
-      defaultState: {} as ControlState,
-    },
-    theme: {
-      enabled: true,
-      defaultState: ThemeState.Light,
-    },
-    mode: {
-      enabled: true,
-      defaultState: ModeState.Full,
-    },
-    rtl: {
-      enabled: true,
-      defaultState: false,
-    },
-    source: {
-      enabled: true,
-      defaultState: false,
-    },
-    a11y: {
-      enabled: false,
-    },
-    msw: {
-      enabled: false,
-    },
-    action: {
-      enabled: true,
-      defaultState: [],
-    },
-    gingerBook: {
-      enabled: true,
-    },
-    width: {
-      enabled: true,
-      options: {
-        xsmall: 414,
-        small: 640,
-        medium: 768,
-        large: 1024,
-      },
-      defaultState: 0,
-    },
-  },
-};
-
-export default config;
