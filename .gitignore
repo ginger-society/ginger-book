@@ -10,4 +10,5 @@ cjs
 .pnpm-store
 packages/ginger-book/typings-for-build
 e2e/*/test-results
+docs
 

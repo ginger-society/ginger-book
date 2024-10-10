@@ -17,7 +17,11 @@
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "turbo": "^1.12.5",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "clean-jsdoc-theme": "^4.2.2",
+    "better-docs": "^2.7.2",
+    "jsdoc": "^4.0.0",
+    "eslint-plugin-jsdoc": "^43.2.0"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -42,7 +46,8 @@
     "prepare": "husky install",
     "release": "./release.sh",
     "test": "turbo run test --concurrency=1 -- -u",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "jsd": "jsdoc -c jsdoc.conf.json"
   },
   "version": "4.5.0",
   "workspaces": [
