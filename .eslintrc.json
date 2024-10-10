@@ -13,6 +13,28 @@
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off"
   },
+  "overrides": [
+    {
+      "files": ["pages/api/**/*.ts"],
+      "plugins": ["jsdoc"],
+      "rules": {
+        "valid-jsdoc": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "jsdoc/no-missing-syntax": [
+          "warn",
+          {
+            "contexts": [
+              {
+                "comment": "JsdocBlock:has(JsdocTag[tag=swagger])",
+                "context": "any",
+                "message": "@swagger documentation is required on each API. Check this out for syntax info: https://github.com/jellydn/next-swagger-doc"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
   "settings": {
     "react": {
       "version": "detect"
