@@ -1,18 +1,53 @@
+## 4.7.0 - 2024-10-10
+
+fix:
+
+- [9bfcb1d756](https://github.com/ginger-society/ginger-book9bfcb1d7562d616c7ed1ea253e11d3816a3aacbd) (Ginger Society Admin) fix: pipeline
+- [5d2d32fce0](https://github.com/ginger-society/ginger-book5d2d32fce01159fa93fe1bde05fa38905e7ba07b) (Ginger Society Admin) fix: pipeline
+- [68d813dd61](https://github.com/ginger-society/ginger-book68d813dd611eeb6d027d33f02bdb080da164e091) (Ginger Society Admin) fix: pipeline
+- [71817a9db6](https://github.com/ginger-society/ginger-book71817a9db63c47f26cdfdedc2bf41ce38dcfe663) (Ginger Society Admin) fix: pipeline
+
+chore:
+
+- [e453d1dfd2](https://github.com/ginger-society/ginger-booke453d1dfd259368ca417d0fa08c96bafce4bb5e6) (Ginger Society Admin) chore: conversion to typescript
+- [fefaae6f31](https://github.com/ginger-society/ginger-bookfefaae6f314c331b7c91d957e98ed63e100e918d) (Ginger Society) chore: Update and rename ci.yml to CI.yml
+  Revert
+- [5b4a770ef7](https://github.com/ginger-society/ginger-book5b4a770ef7d63f14e4ba3d560880f9aeaeaa63d5) (Ginger Society Admin) Revert "chore: conversion to typescript"
+
+  This reverts commit e453d1dfd259368ca417d0fa08c96bafce4bb5e6.
+
+- [ae58ac1455](https://github.com/ginger-society/ginger-bookae58ac14555e7d63976c4af8623864c4e333e278) (Ginger Society Admin) Revert "fix: pipeline"
+
+  This reverts commit 9bfcb1d7562d616c7ed1ea253e11d3816a3aacbd.
+
+feat:
+
+- [0425b74dd1](https://github.com/ginger-society/ginger-book0425b74dd1e917846f66d342de268f2dc5dc71fa) (Ginger Society Admin) feat: added jsdoc support
+- [b08f4481e3](https://github.com/ginger-society/ginger-bookb08f4481e3b51dc9365aec8885d1c04afb94b6be) (Ginger Society Admin) feat: updated module resolution to bundler , fixing the typecheck
+- [e1894091ae](https://github.com/ginger-society/ginger-booke1894091ae776a028c2e260d92f7d58df86ee140) (Ginger Society Admin) feat: added test script for pipeline
+- [7bab130c73](https://github.com/ginger-society/ginger-book7bab130c73930f0f7051ab48270c5fd351305ebf) (Ginger Society Admin) feat: added workflow dispatch trigger in pipeline
+- [92d0c0be8a](https://github.com/ginger-society/ginger-book92d0c0be8a83b4b32a4e6ad817d91b62c3a780de) (Ginger Society Admin) feat: updated pipeline and added links
+- [56f05da049](https://github.com/ginger-society/ginger-book56f05da049146e9e78ba6652e90472489e2b74b1) (Ginger Society Admin) feat: added pipeline commands in gh action
+
 ## 4.5.0 - 2024-09-09
 
 fix:
 
 - [697957eced](https://github.com/ginger-society/ginger-book697957eced9ee86e722527ca68b4077147fb15aa) (Ginger Society Admin) fix: pipeline
 
-## 4.4.0 - 2024-09-09
-
 chore:
 
-- [ac1b4efc6d](https://github.com/ginger-society/ginger-bookac1b4efc6d5e52ed996925d7728f38f4a222f231) (Ginger Society Admin) chore: version bump to 4.4.0
+- [906d436aa0](https://github.com/ginger-society/ginger-book906d436aa03b3492534c47016291b287e98d7b9e) (Ginger Society Admin) chore: version bump to 4.5.0
+
+## 4.4.0 - 2024-09-09
 
 fix:
 
 - [7b7527023a](https://github.com/ginger-society/ginger-book7b7527023a49fbbff942712b3f52795b1f694fc4) (Ginger Society Admin) fix: git origin url
+
+chore:
+
+- [ac1b4efc6d](https://github.com/ginger-society/ginger-bookac1b4efc6d5e52ed996925d7728f38f4a222f231) (Ginger Society Admin) chore: version bump to 4.4.0
 
 ## 4.3.0 - 2024-09-09
 
@@ -28,6 +63,25 @@ chore:
 - [4ff24550bf](https://github.com/ginger-society/ginger-book4ff24550bf34a85f29e8cc7fbb11f92111e7d8aa) (Ginger Society Admin) chore: added changelog to git
 
 ## 4.1.0 - 2024-09-09
+
+fix:
+
+- [8f46b63813](https://github.com/ginger-society/ginger-book8f46b638133425d9bdb4bf1f2fd8c213d554f6c9) (Ginger Society Admin) fix: ci pipeline
+- [47ff34730b](https://github.com/ginger-society/ginger-book47ff34730b5871f286ee2619a8e4ee4ca024a5fd) (Ginger Society Admin) fix: rever ci changes
+- [b8f6d6aad1](https://github.com/ginger-society/ginger-bookb8f6d6aad1b472fd1313a5e62cee6a3bdd5a9fba) (Ginger Society Admin) fix: test fixes
+- [275ab51869](https://github.com/ginger-society/ginger-book275ab51869dbdcd82b2877f768f563855e43d1a6) (Ginger Society Admin) fix: updated script name
+- [330f396d60](https://github.com/ginger-society/ginger-book330f396d60162e96ab1cf4e7c3dd539a9fecf2f6) (Ginger Society Admin) fix: build
+- [5d3d62a202](https://github.com/ginger-society/ginger-book5d3d62a20281032bdb816faf7bff11efac9cc517) (Ginger Society Admin) fix: minor
+- [6336f9eb6d](https://github.com/ginger-society/ginger-book6336f9eb6d4d41a036e42110db7fc351b76ab291) (Ginger Society Admin) fix: added build step
+- [c81564f60b](https://github.com/ginger-society/ginger-bookc81564f60b32cba1621b9e5bbc3bfac71540883e) (Ginger Society Admin) fix: cleanup
+- [3b23da6752](https://github.com/ginger-society/ginger-book3b23da6752b59b8a1f689c70fb0b83af9dd8b7cc) (Ginger Society Admin) fix: pipeline fix
+- [1499263467](https://github.com/ginger-society/ginger-book14992634678f556d6ef7e33b85083bc60a88229b) (Ginger Society Admin) fix: githb workflow fixes
+- [be94fd5d67](https://github.com/ginger-society/ginger-bookbe94fd5d6728740fd90154d6bf09b6990a557fbd) (Ginger Society Admin) fix: github workflow fixes
+- [e7c2ebe1a6](https://github.com/ginger-society/ginger-booke7c2ebe1a607f017d71d2207fee045ea6f8be48d) (Ginger Society Admin) fix: renamed package in tests
+
+test:
+
+- [18158b81df](https://github.com/ginger-society/ginger-book18158b81df5aa30d61367be397e43fa6f6743dc5) (Ginger Society Admin) test: version change
 
 chore:
 
@@ -54,31 +108,12 @@ chore:
 - [d00f39a97f](https://github.com/ginger-society/ginger-bookd00f39a97f3f215897a915471a5e6824736548c8) (Ginger Society Admin) chore: renamed package
 - [7298bbf1ba](https://github.com/ginger-society/ginger-book7298bbf1bad067723863134a916e044630428391) (Ginger Society Admin) chore: first commit
 
-fix:
+removed
 
-- [8f46b63813](https://github.com/ginger-society/ginger-book8f46b638133425d9bdb4bf1f2fd8c213d554f6c9) (Ginger Society Admin) fix: ci pipeline
-- [47ff34730b](https://github.com/ginger-society/ginger-book47ff34730b5871f286ee2619a8e4ee4ca024a5fd) (Ginger Society Admin) fix: rever ci changes
-- [b8f6d6aad1](https://github.com/ginger-society/ginger-bookb8f6d6aad1b472fd1313a5e62cee6a3bdd5a9fba) (Ginger Society Admin) fix: test fixes
-- [275ab51869](https://github.com/ginger-society/ginger-book275ab51869dbdcd82b2877f768f563855e43d1a6) (Ginger Society Admin) fix: updated script name
-- [330f396d60](https://github.com/ginger-society/ginger-book330f396d60162e96ab1cf4e7c3dd539a9fecf2f6) (Ginger Society Admin) fix: build
-- [5d3d62a202](https://github.com/ginger-society/ginger-book5d3d62a20281032bdb816faf7bff11efac9cc517) (Ginger Society Admin) fix: minor
-- [6336f9eb6d](https://github.com/ginger-society/ginger-book6336f9eb6d4d41a036e42110db7fc351b76ab291) (Ginger Society Admin) fix: added build step
-- [c81564f60b](https://github.com/ginger-society/ginger-bookc81564f60b32cba1621b9e5bbc3bfac71540883e) (Ginger Society Admin) fix: cleanup
-- [3b23da6752](https://github.com/ginger-society/ginger-book3b23da6752b59b8a1f689c70fb0b83af9dd8b7cc) (Ginger Society Admin) fix: pipeline fix
-- [1499263467](https://github.com/ginger-society/ginger-book14992634678f556d6ef7e33b85083bc60a88229b) (Ginger Society Admin) fix: githb workflow fixes
-- [be94fd5d67](https://github.com/ginger-society/ginger-bookbe94fd5d6728740fd90154d6bf09b6990a557fbd) (Ginger Society Admin) fix: github workflow fixes
-- [e7c2ebe1a6](https://github.com/ginger-society/ginger-booke7c2ebe1a607f017d71d2207fee045ea6f8be48d) (Ginger Society Admin) fix: renamed package in tests
+- [d82f428490](https://github.com/ginger-society/ginger-bookd82f4284901978ab40e801497d7b07964e86129b) (Ginger Society Admin) removed private from package.json
+- [8bbdf05b8e](https://github.com/ginger-society/ginger-book8bbdf05b8ebb9d9793e14ca84af69bc2e76fd201) (Ginger Society Admin) removed website package
 
 feat:
 
 - [f6f9dad9d5](https://github.com/ginger-society/ginger-bookf6f9dad9d5f116f45ce336ba59bb562d5a6857fa) (Ginger Society Admin) feat: updated configs and pipeline
 - [f9f0be3106](https://github.com/ginger-society/ginger-bookf9f0be3106a237676e6b21230f388b8dde690d58) (Ginger Society Admin) feat: added readme in ginger-book package
-
-test:
-
-- [18158b81df](https://github.com/ginger-society/ginger-book18158b81df5aa30d61367be397e43fa6f6743dc5) (Ginger Society Admin) test: version change
-
-removed
-
-- [d82f428490](https://github.com/ginger-society/ginger-bookd82f4284901978ab40e801497d7b07964e86129b) (Ginger Society Admin) removed private from package.json
-- [8bbdf05b8e](https://github.com/ginger-society/ginger-book8bbdf05b8ebb9d9793e14ca84af69bc2e76fd201) (Ginger Society Admin) removed website package

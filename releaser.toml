@@ -1,7 +1,11 @@
+[settings]
+git_url_prefix = "https://github.com/ginger-society/ginger-book"
+take_snapshots = false
+
 [version]
 channel = "Final"
 major = 4
-minor = 5
+minor = 7
 patch = 0
 revision = 0
 
@@ -14,6 +18,3 @@ variable = "version"
 file_name = "package.json"
 output_type = "String"
 variable = "version"
-
-[settings]
-git_url_prefix = "https://github.com/ginger-society/ginger-book"
