@@ -4,7 +4,7 @@ import merge from "lodash.merge";
 import loadConfig from "./load-config.js";
 
 /**
- * @param {import('../shared/types.ts').CLIParams} params - The CLI parameters
+ * @param {import('../shared/types').CLIParams} params - The CLI parameters
  */
 export default async function applyCLIConfig(params) {
   debug(`CLI theme: ${params.theme}`);

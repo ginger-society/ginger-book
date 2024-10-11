@@ -33,10 +33,10 @@ const loadConfig = async (configFolder) => {
       ...config.hotkeys,
     };
 
-    return /** @type {import("../shared/types.ts").Config} */ (mergedConfig);
+    return /** @type {import("../shared/types").Config} */ (mergedConfig);
   } catch (e) {
     debug(`No custom config found.`);
-    return /** @type {import("../shared/types.ts").Config} */ (defaultConfig);
+    return /** @type {import("../shared/types").Config} */ (defaultConfig);
   }
 };
 
