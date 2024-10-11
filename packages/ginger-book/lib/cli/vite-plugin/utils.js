@@ -7,7 +7,7 @@ export const IMPORT_ROOT = process.env.IMPORT_ROOT || process.cwd();
 export const printError = (message) => console.error("\x1b[31m%s", message);
 
 /**
- * @param entryData {import('../../shared/types').EntryData}
+ * @param entryData {import('../../shared/types.ts').EntryData}
  */
 export const detectDuplicateStoryNames = (entryData) => {
   /** @type {{[key: string]: [string, string]}} */

@@ -4,11 +4,15 @@
   },
   "source": {
     "include": ["packages"],
-    "includePattern": "\\.(js|ts|tsx)$",
+    "includePattern": "\\.(ts|tsx)$",
     "excludePattern": "(^|\\/|\\\\)_|node_modules",
     "exclude": ["node_modules"]
   },
-  "plugins": ["plugins/markdown", "better-docs/typescript"],
+  "plugins": [
+    "plugins/markdown",
+    "better-docs/typescript",
+    "node_modules/jsdoc-type-pratt-parser"
+  ],
   "templates": {},
   "opts": {
     "template": "node_modules/clean-jsdoc-theme",
@@ -16,10 +20,10 @@
     "recurse": true,
     "readme": "README.md",
     "theme_opts": {
-      "homepageTitle": "Clean JSDoc Theme",
+      "homepageTitle": "Ginger Book documentations",
       "includeFilesListInHomepage": true,
       "default_theme": "dark",
-      "title": "IAM",
+      "title": "Ginger Book",
       "resizeable": {
         "navbar": {
           "min": "300",

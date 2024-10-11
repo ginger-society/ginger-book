@@ -13,7 +13,7 @@ import applyCLIConfig from "./apply-cli-config.js";
 import getAppId from "./get-app-id.js";
 
 /**
- * @param params {import("../shared/types.js").CLIParams}
+ * @param {import("../shared/types").CLIParams} params
  */
 const build = async (params = {}) => {
   const startTime = performance.now();

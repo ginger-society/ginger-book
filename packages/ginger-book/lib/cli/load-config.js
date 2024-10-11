@@ -10,7 +10,7 @@ import defaultConfig from "../shared/default-config.js";
 const loadConfig = async (configFolder) => {
   try {
     /**
-     * @type {import('../shared/types.js').UserConfig}
+     * @type {import('../shared/types').UserConfig}
      */
     const config = (
       await import(pathToFileURL(path.join(configFolder, "config.mjs")).href)
@@ -33,10 +33,10 @@ const loadConfig = async (configFolder) => {
       ...config.hotkeys,
     };
 
-    return /** @type {import("../shared/types.js").Config} */ (mergedConfig);
+    return /** @type {import("../shared/types.ts").Config} */ (mergedConfig);
   } catch (e) {
     debug(`No custom config found.`);
-    return /** @type {import("../shared/types.js").Config} */ (defaultConfig);
+    return /** @type {import("../shared/types.ts").Config} */ (defaultConfig);
   }
 };
 

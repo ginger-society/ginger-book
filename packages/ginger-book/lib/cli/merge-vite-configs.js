@@ -15,7 +15,6 @@ function isObject(value) {
  * @param {import('vite').UserConfig} defaults
  * @param {import('vite').UserConfig} overrides
  * @param {string} rootPath
- * @returns
  */
 function mergeConfigRecursively(defaults, overrides, rootPath) {
   /** @type import('vite').UserConfig */
@@ -58,7 +57,6 @@ function mergeConfigRecursively(defaults, overrides, rootPath) {
  * @param {import('vite').UserConfig} defaults
  * @param {import('vite').UserConfig} overrides
  * @param {boolean} isRoot
- * @returns
  */
 export default function mergeConfig(defaults, overrides, isRoot = true) {
   return mergeConfigRecursively(defaults, overrides, isRoot ? "" : ".");

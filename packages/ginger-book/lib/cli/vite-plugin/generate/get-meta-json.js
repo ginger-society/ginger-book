@@ -1,7 +1,7 @@
 import { storyIdToMeta } from "../naming-utils.js";
 
 /**
- * @param entryData {import('../../../shared/types.js').EntryData}
+ * @param entryData {import('../../../shared/types.ts').EntryData}
  */
 export const getMetaJson = (entryData) => {
   /** @type {string[]} */
@@ -40,12 +40,12 @@ export const getMetaJson = (entryData) => {
 };
 
 /**
- * @param entryData {import('../../../shared/types.js').EntryData}
+ * @param entryData {import('../../../shared/types.ts').EntryData}
  */
 export const getMetaJsonString = (entryData) =>
   JSON.stringify(getMetaJson(entryData), null, "  ");
 
 /**
- * @param entryData {import('../../../shared/types.js').EntryData}
+ * @param entryData {import('../../../shared/types.ts').EntryData}
  */
 export const getMetaJsonObject = (entryData) => getMetaJson(entryData);

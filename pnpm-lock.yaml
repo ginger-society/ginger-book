@@ -56,6 +56,9 @@ importers:
       jsdoc:
         specifier: ^4.0.0
         version: 4.0.3
+      jsdoc-type-pratt-parser:
+        specifier: ^4.1.0
+        version: 4.1.0
       lint-staged:
         specifier: ^15.2.2
         version: 15.2.2
@@ -68,6 +71,9 @@ importers:
       typescript:
         specifier: ^5.4.2
         version: 5.4.2
+      vite:
+        specifier: ^5.1.6
+        version: 5.1.6(@types/node@20.11.28)
 
   e2e/addons:
     dependencies:
@@ -5386,6 +5392,11 @@ packages:
 
   /jsdoc-type-pratt-parser@4.0.0:
     resolution: {integrity: sha512-YtOli5Cmzy3q4dP26GraSOeAhqecewG04hoO8DY56CH4KJ9Fvv5qKWUCCo3HZob7esJQHCv6/+bnTy72xZZaVQ==}
+    engines: {node: '>=12.0.0'}
+    dev: true
+
+  /jsdoc-type-pratt-parser@4.1.0:
+    resolution: {integrity: sha512-Hicd6JK5Njt2QB6XYFS7ok9e37O8AYk3jTcppG4YVQnYjOemymvTcmc7OWsmq/Qqj5TdRFO5/x/tIPmBeRtGHg==}
     engines: {node: '>=12.0.0'}
     dev: true
 

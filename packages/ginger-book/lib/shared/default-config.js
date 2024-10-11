@@ -1,5 +1,5 @@
 /**
- * @type {import('./types').Config}
+ * @type {import('./types.ts').Config}
  */
 export default {
   stories: "src/**/*.stories.{js,jsx,ts,tsx,mdx}",
@@ -37,15 +37,15 @@ export default {
   addons: {
     control: {
       enabled: true,
-      defaultState: /** @type {import('./types').ControlState} */ ({}),
+      defaultState: /** @type {import('./types.ts').ControlState} */ ({}),
     },
     theme: {
       enabled: true,
-      defaultState: /** @type {import('./types').ThemeState} */ ("light"),
+      defaultState: /** @type {import('./types.ts').ThemeState} */ ("light"),
     },
     mode: {
       enabled: true,
-      defaultState: /** @type {import('./types').ModeState} */ ("full"),
+      defaultState: /** @type {import('./types.ts').ModeState} */ ("full"),
     },
     rtl: {
       enabled: true,

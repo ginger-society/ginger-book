@@ -18,10 +18,12 @@
     "eslint-plugin-react": "^7.34.1",
     "husky": "^9.0.11",
     "jsdoc": "^4.0.0",
+    "jsdoc-type-pratt-parser": "^4.1.0",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "turbo": "^1.12.5",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "vite": "^5.1.6"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -65,5 +67,6 @@
     "e2e/programmatic",
     "e2e/provider",
     "e2e/msw"
-  ]
+  ],
+  "dependencies": {}
 }

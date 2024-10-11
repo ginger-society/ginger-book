@@ -5,7 +5,6 @@ import path from "path";
  *
  * @param {string} dirPath
  * @param {string[]} arrayOfFiles
- * @returns
  */
 const getAllFiles = function (dirPath, arrayOfFiles = []) {
   const files = fs.readdirSync(dirPath);
@@ -22,7 +21,6 @@ const getAllFiles = function (dirPath, arrayOfFiles = []) {
 /**
  *
  * @param {string} directoryPath
- * @returns
  */
 const getFolderSize = function (directoryPath) {
   const arrayOfFiles = getAllFiles(directoryPath);

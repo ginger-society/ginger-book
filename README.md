@@ -1,7 +1,3 @@
-<p align="center">
-</p>
-<br/>
-
 ginger-book is an environment to develop, test, and share your React components faster.
 
 ## Quick start
@@ -39,3 +35,5 @@ mkdir src
 echo "export const World = () => <p>Hey</p>;" > src/hello.stories.tsx
 npx ginger-book serve
 ```
+
+- [View the Changelog](CHANGELOG.md)

@@ -26,7 +26,7 @@ export const Provider = ({ children }) =>
 `;
 
 /**
- * @param config {import("../../shared/types.js").Config}
+ * @param config {import("../../shared/types.ts").Config}
  * @param configFolder {string}
  * @param mode {string}
  */

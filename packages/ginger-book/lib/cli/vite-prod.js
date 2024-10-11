@@ -3,7 +3,7 @@ import path from "path";
 import getBaseViteConfig from "./vite-base.js";
 
 /**
- * @param config {import("../shared/types.js").Config}
+ * @param config {import("../shared/types.ts").Config}
  * @param configFolder {string}
  */
 const viteProd = async (config, configFolder) => {

@@ -37,7 +37,7 @@ const getCacheDir = (cacheDir) => {
  * @param command {'build' | 'serve'}
  * @param mode {string}
  * @param viteConfig {string | undefined}
- * @return {Promise<import('../shared/types.js').GetUserViteConfig>}
+ * @return {Promise<import('../shared/types.ts').GetUserViteConfig>}
  */
 export default async (command, mode, viteConfig) => {
   const userViteConfig = await loadConfigFromFile(
