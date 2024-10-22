@@ -68,5 +68,21 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      - name: Build tech docs
+        run: pnpm jsd
+
+      # Step to configure AWS credentials for accessing S3
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1  # Change the region as needed
+
+      # Step to upload documentation to the S3 bucket
+      - name: Upload docs to S3
+        run: aws s3 cp ./docs s3://ginger-book-tech-docs/ --recursive
+        # Replace ./path-to-docs with the actual path to the documentation files you want to upload
+
       - name: Update pipeline to running
         run: ginger-connector update-pipeline stage passing
