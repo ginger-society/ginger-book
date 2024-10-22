@@ -44,6 +44,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Build tech docs
+        run: pnpm jsd
+
       - name: Creating .npmrc
         run: |
           cat << EOF > "$HOME/.npmrc"
@@ -67,9 +70,6 @@ jobs:
         run: cd packages/ginger-book && pnpm types && ./publish-next.js
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Build tech docs
-        run: pnpm jsd
 
       # Step to configure AWS credentials for accessing S3
       - name: Configure AWS credentials
